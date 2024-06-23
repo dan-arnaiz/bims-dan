@@ -21,5 +21,10 @@ namespace BIMS_dan
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
