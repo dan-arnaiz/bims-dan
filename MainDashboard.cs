@@ -8,28 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BIMS_dan
-{
-public partial class MainDashboard : Form
-{
-    public MainDashboard()
-    {
-        InitializeComponent();
-    }
+namespace BIMS_dan {
+public partial class MainDashboard : Form {
+  public MainDashboard() { InitializeComponent(); }
 
-    private void label2_Click(object sender, EventArgs e)
-    {
+  private void label2_Click(object sender, EventArgs e) {}
 
-    }
+  private void button4_Click(object sender, EventArgs e) {}
 
-    private void button4_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void MainDashboard_Load(object sender, EventArgs e)
-    {
-
-    }
+  private void MainDashboard_Load(object sender, EventArgs e) {}
 }
 }

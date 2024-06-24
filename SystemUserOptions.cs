@@ -8,33 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BIMS_dan
-{
-public partial class SystemUserOptions : Form
-{
-    public SystemUserOptions()
-    {
-        InitializeComponent();
-    }
+namespace BIMS_dan {
+public partial class SystemUserOptions : Form {
+  public SystemUserOptions() { InitializeComponent(); }
 
-    private void button1_Click(object sender, EventArgs e)
-    {
+  private void button1_Click(object sender, EventArgs e) {}
 
-    }
+  private void SystemUserOptions_Load(object sender, EventArgs e) {}
 
-    private void SystemUserOptions_Load(object sender, EventArgs e)
-    {
+  private void button4_Click(object sender, EventArgs e) {}
 
-    }
-
-    private void button4_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void button3_Click(object sender, EventArgs e)
-    {
-
-    }
+  private void button3_Click(object sender, EventArgs e) {}
 }
 }
