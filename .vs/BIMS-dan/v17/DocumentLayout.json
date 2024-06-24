@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\",
+  "WorkspaceRootPath": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-bims-dan\\bims-dan\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\my pc\\desktop\\dan code\\computerscience\\oop-bims-dan\\bims-dan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "MainDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\MainDashboard.cs [Design]*",
+              "RelativeToolTip": "MainDashboard.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T11:36:45.088Z",
+              "WhenOpened": "2024-06-24T06:21:18.411Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "App.config",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\App.config",
-              "RelativeToolTip": "App.config",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-23T11:36:44.1Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T12:40:44.295Z",
               "EditorCaption": ""
             }
           ]
