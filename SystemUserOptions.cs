@@ -10,31 +10,31 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    public partial class SystemUserOptions : Form
+public partial class SystemUserOptions : Form
+{
+    public SystemUserOptions()
     {
-        public SystemUserOptions()
-        {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SystemUserOptions_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+        InitializeComponent();
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void SystemUserOptions_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void button3_Click(object sender, EventArgs e)
+    {
+
+    }
+}
 }
