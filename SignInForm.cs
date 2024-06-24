@@ -51,5 +51,10 @@ namespace BIMS_dan
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

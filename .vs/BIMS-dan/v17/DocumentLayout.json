@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\barangaylistsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:barangaylistsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\barangaylistsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:barangaylistsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\test-bims2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,79 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "MainDashboard.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\MainDashboard.cs",
+              "RelativeToolTip": "MainDashboard.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAlwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T05:40:37.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BarangayListsForm.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\BarangayListsForm.cs",
               "RelativeDocumentMoniker": "BarangayListsForm.cs",
               "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\BarangayListsForm.cs [Design]",
               "RelativeToolTip": "BarangayListsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:39:54.329Z",
+              "WhenOpened": "2024-06-24T05:34:21.255Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignInForm.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.cs",
-              "RelativeDocumentMoniker": "SignInForm.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.cs*",
-              "RelativeToolTip": "SignInForm.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAApwDcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T11:38:13.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignInForm.Designer.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.Designer.cs",
-              "RelativeDocumentMoniker": "SignInForm.Designer.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.Designer.cs*",
-              "RelativeToolTip": "SignInForm.Designer.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T11:36:43.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SignInForm.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.cs",
               "RelativeDocumentMoniker": "SignInForm.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.cs [Design]*",
-              "RelativeToolTip": "SignInForm.cs [Design]*",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\SignInForm.cs [Design]",
+              "RelativeToolTip": "SignInForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T11:36:45.088Z",
+              "WhenOpened": "2024-06-24T05:34:18.801Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BarangayListsForm.Designer.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\BarangayListsForm.Designer.cs",
-              "RelativeDocumentMoniker": "BarangayListsForm.Designer.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\BarangayListsForm.Designer.cs",
-              "RelativeToolTip": "BarangayListsForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:40:14.666Z",
+              "WhenOpened": "2024-06-24T05:28:26.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-23T11:36:44.1Z",
-              "EditorCaption": ""
+              "DocumentIndex": 0,
+              "Title": "MainDashboard.cs [Design]",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\test-bims2\\MainDashboard.cs [Design]",
+              "RelativeToolTip": "MainDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T05:25:38.231Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
