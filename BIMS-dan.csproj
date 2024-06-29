@@ -52,11 +52,41 @@
     <Compile Include="BarangayListsForm.Designer.cs">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="controllerBarangayEvents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerBarangayEvents.Designer.cs">
+      <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controllerBarangayOfficials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerBarangayOfficials.Designer.cs">
+      <DependentUpon>controllerBarangayOfficials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controllerDashboardActivities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerDashboardActivities.Designer.cs">
+      <DependentUpon>controllerDashboardActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controllerFormRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerFormRequests.Designer.cs">
+      <DependentUpon>controllerFormRequests.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controllerResidents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerResidents.Designer.cs">
+      <DependentUpon>controllerResidents.cs</DependentUpon>
     </Compile>
     <Compile Include="SignInForm.cs">
       <SubType>Form</SubType>
@@ -75,8 +105,23 @@
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="controllerBarangayEvents.resx">
+      <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllerBarangayOfficials.resx">
+      <DependentUpon>controllerBarangayOfficials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllerDashboardActivities.resx">
+      <DependentUpon>controllerDashboardActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllerFormRequests.resx">
+      <DependentUpon>controllerFormRequests.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllerResidents.resx">
+      <DependentUpon>controllerResidents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
@@ -89,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SystemUserOptions.resx">
       <DependentUpon>SystemUserOptions.cs</DependentUpon>
@@ -105,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

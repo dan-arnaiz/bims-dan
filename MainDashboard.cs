@@ -22,14 +22,61 @@ namespace BIMS_dan
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-
+            await LoadControlAsync(new controllerFormRequests());
         }
 
         private void MainDashboard_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private async void residentsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerResidents());
+        }
+
+        private Task LoadControlAsync(UserControl control)
+        {
+            return Task.Run(() =>
+            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action(() => LoadControl(control)));
+                }
+                else
+                {
+                    LoadControl(control);
+                }
+            });
+        }
+
+        private void LoadControl(UserControl control)
+        {
+            mainPlaceholder.Controls.Clear();
+            control.Dock = DockStyle.Fill;
+            mainPlaceholder.Controls.Add(control);
+        }
+
+        private void barangaySettingsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void DashboardButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerDashboardActivities());
+        }
+
+        private async void barangayOfficialsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerBarangayOfficials());
+        }
+
+        private async void eventsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerBarangayEvents());
         }
     }
 }
