@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    public partial class controllerFormRequests : UserControl
+public partial class controllerFormRequests : UserControl
+{
+    public controllerFormRequests()
     {
-        public controllerFormRequests()
-        {
-            InitializeComponent();
-        }
-
-        private void ResidentsLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+        InitializeComponent();
     }
+
+    private void ResidentsLabel_Click(object sender, EventArgs e)
+    {
+
+    }
+}
 }

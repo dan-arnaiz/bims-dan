@@ -11,18 +11,18 @@ using System.Runtime.InteropServices;
 
 namespace BIMS_dan
 {
-    public partial class controllerResidents : UserControl
+public partial class controllerResidents : UserControl
+{
+    public controllerResidents()
     {
-        public controllerResidents()
-        {
-            InitializeComponent();
-        }
-
-        private void searchBarText_TextChanged(object sender, EventArgs e)
-        {
-          
-        }
+        InitializeComponent();
     }
 
-    
+    private void searchBarText_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+}
+
+
 }

@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    public partial class controllerBarangayEvents : UserControl
+public partial class controllerBarangayEvents : UserControl
+{
+    public controllerBarangayEvents()
     {
-        public controllerBarangayEvents()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

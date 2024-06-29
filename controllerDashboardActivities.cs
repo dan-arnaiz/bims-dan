@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    public partial class controllerDashboardActivities : UserControl
+public partial class controllerDashboardActivities : UserControl
+{
+    public controllerDashboardActivities()
     {
-        public controllerDashboardActivities()
-        {
-            InitializeComponent();
-        }
-
-        private void controllerDashboardActivities_Load(object sender, EventArgs e)
-        {
-
-        }
+        InitializeComponent();
     }
+
+    private void controllerDashboardActivities_Load(object sender, EventArgs e)
+    {
+
+    }
+}
 }
