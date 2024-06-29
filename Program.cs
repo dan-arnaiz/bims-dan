@@ -16,7 +16,7 @@ namespace BIMS_dan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainDashboard());
+            Application.Run(new SignInForm());
         }
     }
 }
