@@ -8,18 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BIMS_dan
-{
-public partial class controllerFormRequests : UserControl
-{
-    public controllerFormRequests()
-    {
-        InitializeComponent();
-    }
+namespace BIMS_dan {
+public partial class controllerFormRequests : UserControl {
+  public controllerFormRequests() { InitializeComponent(); }
 
-    private void ResidentsLabel_Click(object sender, EventArgs e)
-    {
-
-    }
+  private void ResidentsLabel_Click(object sender, EventArgs e) {}
 }
 }
