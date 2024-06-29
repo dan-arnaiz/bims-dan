@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    public partial class ResidentsController : UserControl
+    public partial class controllerBarangayEvents : UserControl
     {
-        public ResidentsController()
+        public controllerBarangayEvents()
         {
             InitializeComponent();
         }

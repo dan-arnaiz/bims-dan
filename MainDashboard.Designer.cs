@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.eventsButton = new System.Windows.Forms.Button();
+            this.formRequestsButton = new System.Windows.Forms.Button();
+            this.barangayOfficialsButton = new System.Windows.Forms.Button();
             this.residentsButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DashboardButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainPlaceholder = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.viewAllBarangaysButton = new System.Windows.Forms.Button();
+            this.barangaySettingsButton = new System.Windows.Forms.Button();
+            this.userOptionsButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,47 +52,49 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.eventsButton);
+            this.panel1.Controls.Add(this.formRequestsButton);
+            this.panel1.Controls.Add(this.barangayOfficialsButton);
             this.panel1.Controls.Add(this.residentsButton);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.DashboardButton);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 581);
             this.panel1.TabIndex = 0;
             // 
-            // button5
+            // eventsButton
             // 
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(44, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(123, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Residents";
-            this.button5.UseVisualStyleBackColor = true;
+            this.eventsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.eventsButton.Location = new System.Drawing.Point(44, 322);
+            this.eventsButton.Name = "eventsButton";
+            this.eventsButton.Size = new System.Drawing.Size(123, 23);
+            this.eventsButton.TabIndex = 6;
+            this.eventsButton.Text = "Barangay Events";
+            this.eventsButton.UseVisualStyleBackColor = true;
+            this.eventsButton.Click += new System.EventHandler(this.eventsButton_Click);
             // 
-            // button4
+            // formRequestsButton
             // 
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(44, 293);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(123, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Form Requests";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.formRequestsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.formRequestsButton.Location = new System.Drawing.Point(44, 293);
+            this.formRequestsButton.Name = "formRequestsButton";
+            this.formRequestsButton.Size = new System.Drawing.Size(123, 23);
+            this.formRequestsButton.TabIndex = 5;
+            this.formRequestsButton.Text = "Form Requests";
+            this.formRequestsButton.UseVisualStyleBackColor = true;
+            this.formRequestsButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // barangayOfficialsButton
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(44, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Barangay Officials";
-            this.button3.UseVisualStyleBackColor = true;
+            this.barangayOfficialsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.barangayOfficialsButton.Location = new System.Drawing.Point(44, 264);
+            this.barangayOfficialsButton.Name = "barangayOfficialsButton";
+            this.barangayOfficialsButton.Size = new System.Drawing.Size(123, 23);
+            this.barangayOfficialsButton.TabIndex = 4;
+            this.barangayOfficialsButton.Text = "Barangay Officials";
+            this.barangayOfficialsButton.UseVisualStyleBackColor = true;
+            this.barangayOfficialsButton.Click += new System.EventHandler(this.barangayOfficialsButton_Click);
             // 
             // residentsButton
             // 
@@ -105,18 +107,19 @@
             this.residentsButton.UseVisualStyleBackColor = true;
             this.residentsButton.Click += new System.EventHandler(this.residentsButton_Click);
             // 
-            // button1
+            // DashboardButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(88)))), ((int)(((byte)(122)))));
-            this.button1.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(44, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DashboardButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.DashboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(88)))), ((int)(((byte)(122)))));
+            this.DashboardButton.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardButton.ForeColor = System.Drawing.Color.White;
+            this.DashboardButton.Location = new System.Drawing.Point(44, 206);
+            this.DashboardButton.Name = "DashboardButton";
+            this.DashboardButton.Size = new System.Drawing.Size(123, 23);
+            this.DashboardButton.TabIndex = 2;
+            this.DashboardButton.Text = "Dashboard";
+            this.DashboardButton.UseVisualStyleBackColor = false;
+            this.DashboardButton.Click += new System.EventHandler(this.DashboardButton_Click);
             // 
             // panel4
             // 
@@ -143,8 +146,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(157)))));
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.barangaySettingsButton);
+            this.panel2.Controls.Add(this.viewAllBarangaysButton);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -177,7 +180,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.button8);
+            this.panel5.Controls.Add(this.userOptionsButton);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -185,44 +188,45 @@
             this.panel5.Size = new System.Drawing.Size(964, 71);
             this.panel5.TabIndex = 7;
             // 
-            // button6
+            // viewAllBarangaysButton
             // 
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(12, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(70, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Residents";
-            this.button6.UseVisualStyleBackColor = true;
+            this.viewAllBarangaysButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.viewAllBarangaysButton.Location = new System.Drawing.Point(12, 3);
+            this.viewAllBarangaysButton.Name = "viewAllBarangaysButton";
+            this.viewAllBarangaysButton.Size = new System.Drawing.Size(109, 23);
+            this.viewAllBarangaysButton.TabIndex = 7;
+            this.viewAllBarangaysButton.Text = "View All Barangays";
+            this.viewAllBarangaysButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // barangaySettingsButton
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(88)))), ((int)(((byte)(122)))));
-            this.button7.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(838, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(123, 23);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Dashboard";
-            this.button7.UseVisualStyleBackColor = false;
+            this.barangaySettingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.barangaySettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(88)))), ((int)(((byte)(122)))));
+            this.barangaySettingsButton.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barangaySettingsButton.ForeColor = System.Drawing.Color.White;
+            this.barangaySettingsButton.Location = new System.Drawing.Point(816, 2);
+            this.barangaySettingsButton.Name = "barangaySettingsButton";
+            this.barangaySettingsButton.Size = new System.Drawing.Size(145, 23);
+            this.barangaySettingsButton.TabIndex = 7;
+            this.barangaySettingsButton.Text = "Barangay Settings";
+            this.barangaySettingsButton.UseVisualStyleBackColor = false;
+            this.barangaySettingsButton.Click += new System.EventHandler(this.barangaySettingsButton_Click);
             // 
-            // button8
+            // userOptionsButton
             // 
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Location = new System.Drawing.Point(851, 37);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(99, 22);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Residents";
-            this.button8.UseVisualStyleBackColor = true;
+            this.userOptionsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.userOptionsButton.Location = new System.Drawing.Point(851, 37);
+            this.userOptionsButton.Name = "userOptionsButton";
+            this.userOptionsButton.Size = new System.Drawing.Size(99, 22);
+            this.userOptionsButton.TabIndex = 7;
+            this.userOptionsButton.Text = "User Settings";
+            this.userOptionsButton.UseVisualStyleBackColor = true;
             // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(964, 581);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.mainPlaceholder);
@@ -251,14 +255,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel mainPlaceholder;
         private System.Windows.Forms.Button residentsButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DashboardButton;
+        private System.Windows.Forms.Button eventsButton;
+        private System.Windows.Forms.Button formRequestsButton;
+        private System.Windows.Forms.Button barangayOfficialsButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button barangaySettingsButton;
+        private System.Windows.Forms.Button viewAllBarangaysButton;
+        private System.Windows.Forms.Button userOptionsButton;
     }
 }

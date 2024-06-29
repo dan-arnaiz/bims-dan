@@ -22,9 +22,9 @@ namespace BIMS_dan
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-
+            await LoadControlAsync(new controllerFormRequests());
         }
 
         private void MainDashboard_Load(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace BIMS_dan
 
         private async void residentsButton_Click(object sender, EventArgs e)
         {
-            await LoadControlAsync(new ResidentsController());
+            await LoadControlAsync(new controllerResidents());
         }
 
         private Task LoadControlAsync(UserControl control)
@@ -59,5 +59,24 @@ namespace BIMS_dan
             mainPlaceholder.Controls.Add(control);
         }
 
+        private void barangaySettingsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void DashboardButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerDashboardActivities());
+        }
+
+        private async void barangayOfficialsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerBarangayOfficials());
+        }
+
+        private async void eventsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new controllerBarangayEvents());
+        }
     }
 }
