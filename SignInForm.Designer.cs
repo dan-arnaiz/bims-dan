@@ -65,7 +65,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(358, 77);
+            this.panel2.Location = new System.Drawing.Point(372, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 249);
             this.panel2.TabIndex = 1;
@@ -146,10 +146,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BIMS_dan.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Image = global::BIMS_dan.Properties.Resources._31;
+            this.pictureBox1.Location = new System.Drawing.Point(60, 75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(340, 364);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -158,9 +158,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(701, 453);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
