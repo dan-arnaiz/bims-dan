@@ -154,14 +154,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1898, 1024);
-=======
-            this.ClientSize = new System.Drawing.Size(1008, 729);
->>>>>>> 27973b79b15ff7770abb875bf5fa79254287f87b
+            this.ClientSize = new System.Drawing.Size(964, 581);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.MaximumSize = new System.Drawing.Size(980, 620);
+            this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "MainDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barangay Information Management System";
