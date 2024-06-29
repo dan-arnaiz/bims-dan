@@ -31,5 +31,33 @@ namespace BIMS_dan
         {
 
         }
+
+        private async void residentsButton_Click(object sender, EventArgs e)
+        {
+            await LoadControlAsync(new ResidentsController());
+        }
+
+        private Task LoadControlAsync(UserControl control)
+        {
+            return Task.Run(() =>
+            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action(() => LoadControl(control)));
+                }
+                else
+                {
+                    LoadControl(control);
+                }
+            });
+        }
+
+        private void LoadControl(UserControl control)
+        {
+            mainPlaceholder.Controls.Clear();
+            control.Dock = DockStyle.Fill;
+            mainPlaceholder.Controls.Add(control);
+        }
+
     }
 }
