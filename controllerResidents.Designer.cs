@@ -30,18 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.residentsTable = new System.Windows.Forms.DataGridView();
-            this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.civilStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearsResidingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.occupationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.residentsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._dan_bimsDataSet3 = new BIMS_dan._dan_bimsDataSet3();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableSettingsButton = new System.Windows.Forms.Button();
             this.refreshResidents = new System.Windows.Forms.Button();
@@ -54,12 +42,25 @@
             this.editResidentButton = new System.Windows.Forms.Button();
             this.searchLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.residentsTableTableAdapter = new BIMS_dan._dan_bimsDataSet3TableAdapters.residentsTableTableAdapter();
+            this._dan_bimsDataSet = new BIMS_dan._dan_bimsDataSet();
+            this.residentsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.residentsTableTableAdapter = new BIMS_dan._dan_bimsDataSetTableAdapters.residentsTableTableAdapter();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.civilStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearsResidingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.occupationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.residentsTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // residentsTable
@@ -85,76 +86,6 @@
             this.residentsTable.Size = new System.Drawing.Size(711, 395);
             this.residentsTable.TabIndex = 1;
             this.residentsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.residentsTable_CellContentClick);
-            // 
-            // pictureDataGridViewImageColumn
-            // 
-            this.pictureDataGridViewImageColumn.DataPropertyName = "picture";
-            this.pictureDataGridViewImageColumn.HeaderText = "picture";
-            this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // middleNameDataGridViewTextBoxColumn
-            // 
-            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "middleName";
-            this.middleNameDataGridViewTextBoxColumn.HeaderText = "middleName";
-            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
-            // 
-            // birthdateDataGridViewTextBoxColumn
-            // 
-            this.birthdateDataGridViewTextBoxColumn.DataPropertyName = "birthdate";
-            this.birthdateDataGridViewTextBoxColumn.HeaderText = "birthdate";
-            this.birthdateDataGridViewTextBoxColumn.Name = "birthdateDataGridViewTextBoxColumn";
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            // 
-            // civilStatusDataGridViewTextBoxColumn
-            // 
-            this.civilStatusDataGridViewTextBoxColumn.DataPropertyName = "civilStatus";
-            this.civilStatusDataGridViewTextBoxColumn.HeaderText = "civilStatus";
-            this.civilStatusDataGridViewTextBoxColumn.Name = "civilStatusDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // yearsResidingDataGridViewTextBoxColumn
-            // 
-            this.yearsResidingDataGridViewTextBoxColumn.DataPropertyName = "yearsResiding";
-            this.yearsResidingDataGridViewTextBoxColumn.HeaderText = "yearsResiding";
-            this.yearsResidingDataGridViewTextBoxColumn.Name = "yearsResidingDataGridViewTextBoxColumn";
-            // 
-            // occupationDataGridViewTextBoxColumn
-            // 
-            this.occupationDataGridViewTextBoxColumn.DataPropertyName = "occupation";
-            this.occupationDataGridViewTextBoxColumn.HeaderText = "occupation";
-            this.occupationDataGridViewTextBoxColumn.Name = "occupationDataGridViewTextBoxColumn";
-            // 
-            // residentsTableBindingSource
-            // 
-            this.residentsTableBindingSource.DataMember = "residentsTable";
-            this.residentsTableBindingSource.DataSource = this._dan_bimsDataSet3;
-            // 
-            // _dan_bimsDataSet3
-            // 
-            this._dan_bimsDataSet3.DataSetName = "_dan_bimsDataSet3";
-            this._dan_bimsDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
@@ -297,9 +228,88 @@
             this.panel2.Size = new System.Drawing.Size(711, 85);
             this.panel2.TabIndex = 2;
             // 
+            // _dan_bimsDataSet
+            // 
+            this._dan_bimsDataSet.DataSetName = "_dan_bimsDataSet";
+            this._dan_bimsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // residentsTableBindingSource
+            // 
+            this.residentsTableBindingSource.DataMember = "residentsTable";
+            this.residentsTableBindingSource.DataSource = this._dan_bimsDataSet;
+            // 
             // residentsTableTableAdapter
             // 
             this.residentsTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewImageColumn1.DataPropertyName = "picture";
+            this.dataGridViewImageColumn1.HeaderText = "picture";
+            this.dataGridViewImageColumn1.Image = global::BIMS_dan.Properties.Resources.default_profile_picture_placeholder_g4pw6l6c8ja53vbv;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // pictureDataGridViewImageColumn
+            // 
+            this.pictureDataGridViewImageColumn.DataPropertyName = "picture";
+            this.pictureDataGridViewImageColumn.HeaderText = "picture";
+            this.pictureDataGridViewImageColumn.Image = global::BIMS_dan.Properties.Resources.default_profile_picture_placeholder_g4pw6l6c8ja53vbv;
+            this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "middleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "middleName";
+            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            // 
+            // birthdateDataGridViewTextBoxColumn
+            // 
+            this.birthdateDataGridViewTextBoxColumn.DataPropertyName = "birthdate";
+            this.birthdateDataGridViewTextBoxColumn.HeaderText = "birthdate";
+            this.birthdateDataGridViewTextBoxColumn.Name = "birthdateDataGridViewTextBoxColumn";
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            // 
+            // civilStatusDataGridViewTextBoxColumn
+            // 
+            this.civilStatusDataGridViewTextBoxColumn.DataPropertyName = "civilStatus";
+            this.civilStatusDataGridViewTextBoxColumn.HeaderText = "civilStatus";
+            this.civilStatusDataGridViewTextBoxColumn.Name = "civilStatusDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // yearsResidingDataGridViewTextBoxColumn
+            // 
+            this.yearsResidingDataGridViewTextBoxColumn.DataPropertyName = "yearsResiding";
+            this.yearsResidingDataGridViewTextBoxColumn.HeaderText = "yearsResiding";
+            this.yearsResidingDataGridViewTextBoxColumn.Name = "yearsResidingDataGridViewTextBoxColumn";
+            // 
+            // occupationDataGridViewTextBoxColumn
+            // 
+            this.occupationDataGridViewTextBoxColumn.DataPropertyName = "occupation";
+            this.occupationDataGridViewTextBoxColumn.HeaderText = "occupation";
+            this.occupationDataGridViewTextBoxColumn.Name = "occupationDataGridViewTextBoxColumn";
             // 
             // controllerResidents
             // 
@@ -313,18 +323,17 @@
             this.Name = "controllerResidents";
             this.Size = new System.Drawing.Size(717, 492);
             ((System.ComponentModel.ISupportInitialize)(this.residentsTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView residentsTable;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button tableSettingsButton;
         private System.Windows.Forms.Button refreshResidents;
@@ -337,6 +346,10 @@
         private System.Windows.Forms.Button editResidentButton;
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.BindingSource residentsTableBindingSource;
+        private _dan_bimsDataSet _dan_bimsDataSet;
+        private _dan_bimsDataSetTableAdapters.residentsTableTableAdapter residentsTableTableAdapter;
+        public System.Windows.Forms.DataGridView residentsTable;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
@@ -347,8 +360,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearsResidingDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn occupationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource residentsTableBindingSource;
-        private _dan_bimsDataSet3 _dan_bimsDataSet3;
-        private _dan_bimsDataSet3TableAdapters.residentsTableTableAdapter residentsTableTableAdapter;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
     }
 }

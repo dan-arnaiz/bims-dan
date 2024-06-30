@@ -379,6 +379,7 @@
             this.uploadPhotoButton.TabIndex = 32;
             this.uploadPhotoButton.Text = "Upload";
             this.uploadPhotoButton.UseVisualStyleBackColor = true;
+            this.uploadPhotoButton.Click += new System.EventHandler(this.uploadPhotoButton_Click);
             // 
             // idImage
             // 

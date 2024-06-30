@@ -26,5 +26,10 @@ namespace BIMS_dan
         {
             this.ParentForm.Close();
         }
+
+        private void uploadPhotoButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
