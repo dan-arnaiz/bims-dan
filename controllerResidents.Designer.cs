@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableSettingsButton = new System.Windows.Forms.Button();
+            this.refreshResidents = new System.Windows.Forms.Button();
             this.ResidentsLabel = new System.Windows.Forms.Label();
             this.residentsTable = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.searchLabel = new System.Windows.Forms.Label();
+            this.editResidentButton = new System.Windows.Forms.Button();
+            this.searchBarText = new System.Windows.Forms.TextBox();
             this.deleteResidentButton = new System.Windows.Forms.Button();
             this.importButton = new System.Windows.Forms.Button();
             this.exportButton = new System.Windows.Forms.Button();
             this.addResidentButton = new System.Windows.Forms.Button();
-            this.editResidentButton = new System.Windows.Forms.Button();
-            this.searchBarText = new System.Windows.Forms.TextBox();
-            this.searchLabel = new System.Windows.Forms.Label();
-            this.tableSettingsButton = new System.Windows.Forms.Button();
-            this.refreshResidents = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.residentsTable)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,6 +57,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(711, 45);
             this.panel1.TabIndex = 0;
+            // 
+            // tableSettingsButton
+            // 
+            this.tableSettingsButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tableSettingsButton.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableSettingsButton.Location = new System.Drawing.Point(548, 7);
+            this.tableSettingsButton.Name = "tableSettingsButton";
+            this.tableSettingsButton.Size = new System.Drawing.Size(95, 28);
+            this.tableSettingsButton.TabIndex = 15;
+            this.tableSettingsButton.Text = "Table Settings";
+            this.tableSettingsButton.UseVisualStyleBackColor = false;
+            // 
+            // refreshResidents
+            // 
+            this.refreshResidents.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.refreshResidents.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshResidents.Location = new System.Drawing.Point(643, 7);
+            this.refreshResidents.Name = "refreshResidents";
+            this.refreshResidents.Size = new System.Drawing.Size(63, 28);
+            this.refreshResidents.TabIndex = 14;
+            this.refreshResidents.Text = "Refresh";
+            this.refreshResidents.UseVisualStyleBackColor = false;
             // 
             // ResidentsLabel
             // 
@@ -91,6 +113,38 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(711, 85);
             this.panel2.TabIndex = 2;
+            // 
+            // searchLabel
+            // 
+            this.searchLabel.AutoSize = true;
+            this.searchLabel.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.Location = new System.Drawing.Point(3, 56);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(47, 16);
+            this.searchLabel.TabIndex = 12;
+            this.searchLabel.Text = "Search:";
+            this.searchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // editResidentButton
+            // 
+            this.editResidentButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.editResidentButton.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editResidentButton.ForeColor = System.Drawing.Color.Black;
+            this.editResidentButton.Location = new System.Drawing.Point(498, 51);
+            this.editResidentButton.Name = "editResidentButton";
+            this.editResidentButton.Size = new System.Drawing.Size(105, 28);
+            this.editResidentButton.TabIndex = 7;
+            this.editResidentButton.Text = "Edit Resident";
+            this.editResidentButton.UseVisualStyleBackColor = false;
+            // 
+            // searchBarText
+            // 
+            this.searchBarText.Location = new System.Drawing.Point(52, 54);
+            this.searchBarText.MinimumSize = new System.Drawing.Size(4, 24);
+            this.searchBarText.Name = "searchBarText";
+            this.searchBarText.Size = new System.Drawing.Size(177, 24);
+            this.searchBarText.TabIndex = 6;
+            this.searchBarText.TextChanged += new System.EventHandler(this.searchBarText_TextChanged);
             // 
             // deleteResidentButton
             // 
@@ -137,60 +191,6 @@
             this.addResidentButton.TabIndex = 1;
             this.addResidentButton.Text = "Add Resident";
             this.addResidentButton.UseVisualStyleBackColor = false;
-            // 
-            // editResidentButton
-            // 
-            this.editResidentButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.editResidentButton.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editResidentButton.ForeColor = System.Drawing.Color.Black;
-            this.editResidentButton.Location = new System.Drawing.Point(498, 51);
-            this.editResidentButton.Name = "editResidentButton";
-            this.editResidentButton.Size = new System.Drawing.Size(105, 28);
-            this.editResidentButton.TabIndex = 7;
-            this.editResidentButton.Text = "Edit Resident";
-            this.editResidentButton.UseVisualStyleBackColor = false;
-            // 
-            // searchBarText
-            // 
-            this.searchBarText.Location = new System.Drawing.Point(52, 55);
-            this.searchBarText.MinimumSize = new System.Drawing.Size(4, 24);
-            this.searchBarText.Name = "searchBarText";
-            this.searchBarText.Size = new System.Drawing.Size(155, 24);
-            this.searchBarText.TabIndex = 6;
-            this.searchBarText.TextChanged += new System.EventHandler(this.searchBarText_TextChanged);
-            // 
-            // searchLabel
-            // 
-            this.searchLabel.AutoSize = true;
-            this.searchLabel.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLabel.Location = new System.Drawing.Point(3, 56);
-            this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(47, 16);
-            this.searchLabel.TabIndex = 12;
-            this.searchLabel.Text = "Search:";
-            this.searchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableSettingsButton
-            // 
-            this.tableSettingsButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tableSettingsButton.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableSettingsButton.Location = new System.Drawing.Point(548, 7);
-            this.tableSettingsButton.Name = "tableSettingsButton";
-            this.tableSettingsButton.Size = new System.Drawing.Size(95, 28);
-            this.tableSettingsButton.TabIndex = 15;
-            this.tableSettingsButton.Text = "Table Settings";
-            this.tableSettingsButton.UseVisualStyleBackColor = false;
-            // 
-            // refreshResidents
-            // 
-            this.refreshResidents.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.refreshResidents.Font = new System.Drawing.Font("Raleway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refreshResidents.Location = new System.Drawing.Point(643, 7);
-            this.refreshResidents.Name = "refreshResidents";
-            this.refreshResidents.Size = new System.Drawing.Size(63, 28);
-            this.refreshResidents.TabIndex = 14;
-            this.refreshResidents.Text = "Refresh";
-            this.refreshResidents.UseVisualStyleBackColor = false;
             // 
             // controllerResidents
             // 
