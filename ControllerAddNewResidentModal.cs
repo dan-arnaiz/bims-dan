@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -117,7 +118,64 @@ namespace BIMS_dan
 
         }
 
-        private void addNewResidentButton_Click(object sender, EventArgs e)
+        private async void addNewResidentButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Assuming picture is a path from a TextBox or a predefined value
+                string directoryPath = "oop-bims-final\\residentimages\\";
+                string filename = $"{lastNameTextBox.Text}_{firstNameTextBox.Text}.jpg";
+                byte[] pictureData = File.ReadAllBytes(Path.Combine(directoryPath, filename));
+                string lastName = lastNameTextBox.Text;
+                string firstName = firstNameTextBox.Text;
+                string middleName = middleNameTextBox.Text;
+                // Assuming suffix is included in lastName or another field if needed
+                DateTime birthdate = birthDatePicker.Value;
+                string sex = sexDropdown.SelectedItem.ToString();
+                string civilStatus = civilStatusDropdown.SelectedItem.ToString();
+                string address = addressTextBox.Text;
+                int yearsResiding = int.Parse(yearsResidingTextBox.Text); // Convert to int
+                string occupation = occupationTextBox.Text;
+
+                // Create an instance of your Database class
+                Database db = new Database();
+                // Call the AddResident method
+                await db.AddResident(pictureData, lastName, firstName, middleName, birthdate, sex, civilStatus, address, yearsResiding, occupation);
+
+                MessageBox.Show("Resident added successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to add resident. Error: {ex.Message}");
+            }
+        }
+
+        private void birthDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sexDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void civilStatusDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addressTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yearsResidingTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void occupationTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -194,6 +194,7 @@
             this.occupationTextBox.Name = "occupationTextBox";
             this.occupationTextBox.Size = new System.Drawing.Size(174, 21);
             this.occupationTextBox.TabIndex = 31;
+            this.occupationTextBox.TextChanged += new System.EventHandler(this.occupationTextBox_TextChanged);
             // 
             // firstNameTextBox
             // 
@@ -231,6 +232,7 @@
             this.yearsResidingTextBox.Name = "yearsResidingTextBox";
             this.yearsResidingTextBox.Size = new System.Drawing.Size(71, 21);
             this.yearsResidingTextBox.TabIndex = 29;
+            this.yearsResidingTextBox.TextChanged += new System.EventHandler(this.yearsResidingTextBox_TextChanged);
             // 
             // suffixTextBox
             // 
@@ -270,6 +272,7 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(369, 21);
             this.addressTextBox.TabIndex = 27;
+            this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
             // 
             // label2
             // 
@@ -320,6 +323,7 @@
             this.civilStatusDropdown.Name = "civilStatusDropdown";
             this.civilStatusDropdown.Size = new System.Drawing.Size(76, 23);
             this.civilStatusDropdown.TabIndex = 25;
+            this.civilStatusDropdown.SelectedIndexChanged += new System.EventHandler(this.civilStatusDropdown_SelectedIndexChanged);
             // 
             // sexDropdown
             // 
@@ -334,6 +338,7 @@
             this.sexDropdown.Name = "sexDropdown";
             this.sexDropdown.Size = new System.Drawing.Size(79, 23);
             this.sexDropdown.TabIndex = 20;
+            this.sexDropdown.SelectedIndexChanged += new System.EventHandler(this.sexDropdown_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -370,6 +375,7 @@
             this.birthDatePicker.Size = new System.Drawing.Size(100, 21);
             this.birthDatePicker.TabIndex = 23;
             this.birthDatePicker.Value = new System.DateTime(2003, 1, 1, 0, 0, 0, 0);
+            this.birthDatePicker.ValueChanged += new System.EventHandler(this.birthDatePicker_ValueChanged);
             // 
             // label6
             // 
