@@ -43,6 +43,25 @@ namespace BIMS_dan
 
             }
         }
+
+        private void editResidentButton_Click(object sender, EventArgs e)
+        {
+            using (Form modalForm = new Form())
+            {
+                ControllerEditResidentModal controllerEditResidentModal = new ControllerEditResidentModal();
+                modalForm.Controls.Add(controllerEditResidentModal);
+                controllerEditResidentModal.Dock = DockStyle.Fill;
+                modalForm.Name = "Edit Resident";
+                modalForm.ShowIcon = false;
+                modalForm.ShowInTaskbar = false;
+                modalForm.Size = new Size(631, 348);
+                modalForm.MinimumSize = new Size(631, 348);
+                modalForm.MaximumSize = new Size(631, 348);
+                modalForm.StartPosition = FormStartPosition.CenterScreen;
+                modalForm.ShowDialog();
+
+            }
+        }
     }
 
     

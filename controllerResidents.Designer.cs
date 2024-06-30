@@ -136,13 +136,14 @@
             this.editResidentButton.TabIndex = 7;
             this.editResidentButton.Text = "Edit Resident";
             this.editResidentButton.UseVisualStyleBackColor = false;
+            this.editResidentButton.Click += new System.EventHandler(this.editResidentButton_Click);
             // 
             // searchBarText
             // 
             this.searchBarText.Location = new System.Drawing.Point(52, 54);
             this.searchBarText.MinimumSize = new System.Drawing.Size(4, 24);
             this.searchBarText.Name = "searchBarText";
-            this.searchBarText.Size = new System.Drawing.Size(177, 24);
+            this.searchBarText.Size = new System.Drawing.Size(177, 20);
             this.searchBarText.TabIndex = 6;
             this.searchBarText.TextChanged += new System.EventHandler(this.searchBarText_TextChanged);
             // 
