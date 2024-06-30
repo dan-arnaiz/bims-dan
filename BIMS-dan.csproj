@@ -164,6 +164,12 @@
     <Compile Include="controllerBarangayEvents.Designer.cs">
       <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
     </Compile>
+    <Compile Include="controllerBarangayLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controllerBarangayLists.Designer.cs">
+      <DependentUpon>controllerBarangayLists.cs</DependentUpon>
+    </Compile>
     <Compile Include="controllerBarangayOfficials.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controllerBarangayEvents.resx">
       <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllerBarangayLists.resx">
+      <DependentUpon>controllerBarangayLists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controllerBarangayOfficials.resx">
       <DependentUpon>controllerBarangayOfficials.cs</DependentUpon>
@@ -282,6 +291,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
