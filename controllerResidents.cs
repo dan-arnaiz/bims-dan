@@ -18,6 +18,13 @@ namespace BIMS_dan
         public controllerResidents()
         {
             InitializeComponent();
+            this.Load += residentsTable_Shown;
+        }
+
+        private async void residentsTable_Shown(object sender, EventArgs e)
+        {
+            Database db = new Database();
+            await db.RefreshResidentsTableAsync(this.residentsTable);
         }
 
         private void searchBarText_TextChanged(object sender, EventArgs e)
@@ -61,6 +68,16 @@ namespace BIMS_dan
                 modalForm.ShowDialog();
 
             }
+        }
+
+        private void residentsTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void refreshResidents_Click(object sender, EventArgs e)
+        {
+            this.Load += residentsTable_Shown;
         }
     }
 

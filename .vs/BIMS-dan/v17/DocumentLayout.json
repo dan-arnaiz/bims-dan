@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllerresidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controlleraddnewresidentmodal.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controlleraddnewresidentmodal.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controlleraddnewresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllereditresidentmodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerbarangaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\barangaylistsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:barangaylistsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerbarangayofficials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -101,18 +101,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControllerAddNewResidentModal.cs [Design]",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs",
-              "RelativeDocumentMoniker": "ControllerAddNewResidentModal.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs [Design]",
-              "RelativeToolTip": "ControllerAddNewResidentModal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T05:26:12.876Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "controllerResidents.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs",
@@ -120,75 +108,76 @@
               "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs [Design]",
               "RelativeToolTip": "controllerResidents.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T00:56:37.523Z",
+              "WhenOpened": "2024-06-30T08:06:55.813Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "controllerResidents.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs",
-              "RelativeDocumentMoniker": "controllerResidents.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs",
-              "RelativeToolTip": "controllerResidents.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAqwCwAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T04:51:23.298Z",
+              "WhenOpened": "2024-06-30T01:17:07.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T02:36:47.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ControllerEditResidentModal.cs [Design]",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs",
-              "RelativeDocumentMoniker": "ControllerEditResidentModal.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs [Design]*",
-              "RelativeToolTip": "ControllerEditResidentModal.cs [Design]*",
+              "Title": "controllerResidents.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs",
+              "RelativeDocumentMoniker": "controllerResidents.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerResidents.cs",
+              "RelativeToolTip": "controllerResidents.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAE8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T06:57:17.948Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ControllerEditResidentModal.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs",
-              "RelativeDocumentMoniker": "ControllerEditResidentModal.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs*",
-              "RelativeToolTip": "ControllerEditResidentModal.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAvwAwAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T07:00:01.643Z",
+              "WhenOpened": "2024-06-30T07:54:01.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ControllerAddNewResidentModal.cs",
+              "Title": "ControllerAddNewResidentModal.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs",
               "RelativeDocumentMoniker": "ControllerAddNewResidentModal.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs",
-              "RelativeToolTip": "ControllerAddNewResidentModal.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAvwA4AAABEAAAA",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs [Design]",
+              "RelativeToolTip": "ControllerAddNewResidentModal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T06:22:20.946Z",
+              "WhenOpened": "2024-06-30T07:11:52.214Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainDashboard.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.cs",
+              "RelativeDocumentMoniker": "MainDashboard.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.cs",
+              "RelativeToolTip": "MainDashboard.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:52:00.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ControllerAddNewResidentModal.resx",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.resx",
-              "RelativeDocumentMoniker": "ControllerAddNewResidentModal.resx",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.resx",
-              "RelativeToolTip": "ControllerAddNewResidentModal.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-30T05:26:23.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "MainDashboard.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.cs",
               "RelativeDocumentMoniker": "MainDashboard.cs",
@@ -200,20 +189,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAcwBQAAAAFAAAA",
+              "DocumentIndex": 7,
+              "Title": "ControllerEditResidentModal.cs [Design]",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs",
+              "RelativeDocumentMoniker": "ControllerEditResidentModal.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs [Design]",
+              "RelativeToolTip": "ControllerEditResidentModal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T01:17:07.677Z",
+              "WhenOpened": "2024-06-30T07:10:03.838Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ControllerAddNewResidentModal.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs",
+              "RelativeDocumentMoniker": "ControllerAddNewResidentModal.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerAddNewResidentModal.cs",
+              "RelativeToolTip": "ControllerAddNewResidentModal.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAEwHcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:33:17.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ControllerEditResidentModal.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs",
+              "RelativeDocumentMoniker": "ControllerEditResidentModal.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\ControllerEditResidentModal.cs",
+              "RelativeToolTip": "ControllerEditResidentModal.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T07:00:01.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "controllerBarangayLists.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerBarangayLists.cs",
               "RelativeDocumentMoniker": "controllerBarangayLists.cs",
@@ -226,19 +240,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Database.cs",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Database.cs",
-              "RelativeDocumentMoniker": "Database.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Database.cs",
-              "RelativeToolTip": "Database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T02:36:47.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "BarangayListsForm.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\BarangayListsForm.cs",
               "RelativeDocumentMoniker": "BarangayListsForm.cs",

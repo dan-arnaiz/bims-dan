@@ -34,38 +34,38 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.addNewResidentButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.idImage = new System.Windows.Forms.PictureBox();
-            this.uploadPhotoButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.birthDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.sexDropdown = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.occupationTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.middleNameTextBox = new System.Windows.Forms.TextBox();
+            this.yearsResidingTextBox = new System.Windows.Forms.TextBox();
+            this.suffixTextBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.civilStatusDropdown = new System.Windows.Forms.ComboBox();
+            this.sexDropdown = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.birthDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.uploadPhotoButton = new System.Windows.Forms.Button();
+            this.idImage = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idImage)).BeginInit();
-            this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,6 +115,7 @@
             this.cancelButton.TabIndex = 6;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // addNewResidentButton
             // 
@@ -127,6 +128,7 @@
             this.addNewResidentButton.TabIndex = 5;
             this.addNewResidentButton.Text = "Add Resident";
             this.addNewResidentButton.UseVisualStyleBackColor = false;
+            this.addNewResidentButton.Click += new System.EventHandler(this.addNewResidentButton_Click);
             // 
             // panel3
             // 
@@ -138,66 +140,23 @@
             this.panel3.Size = new System.Drawing.Size(594, 203);
             this.panel3.TabIndex = 4;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.uploadPhotoButton);
-            this.panel4.Controls.Add(this.idImage);
-            this.panel4.Location = new System.Drawing.Point(16, 15);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(116, 166);
-            this.panel4.TabIndex = 33;
-            // 
-            // idImage
-            // 
-            this.idImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.idImage.InitialImage = global::BIMS_dan.Properties.Resources._22;
-            this.idImage.Location = new System.Drawing.Point(9, 7);
-            this.idImage.Name = "idImage";
-            this.idImage.Size = new System.Drawing.Size(100, 100);
-            this.idImage.TabIndex = 33;
-            this.idImage.TabStop = false;
-            this.idImage.Click += new System.EventHandler(this.idImage_Click);
-            // 
-            // uploadPhotoButton
-            // 
-            this.uploadPhotoButton.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uploadPhotoButton.Location = new System.Drawing.Point(28, 130);
-            this.uploadPhotoButton.Name = "uploadPhotoButton";
-            this.uploadPhotoButton.Size = new System.Drawing.Size(63, 23);
-            this.uploadPhotoButton.TabIndex = 32;
-            this.uploadPhotoButton.Text = "Upload";
-            this.uploadPhotoButton.UseVisualStyleBackColor = true;
-            this.uploadPhotoButton.Click += new System.EventHandler(this.uploadPhotoButton_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(25, 110);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 15);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "ID Picture";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.lastNameTextBox);
+            this.panel5.Controls.Add(this.occupationTextBox);
+            this.panel5.Controls.Add(this.firstNameTextBox);
             this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox6);
-            this.panel5.Controls.Add(this.textBox4);
+            this.panel5.Controls.Add(this.middleNameTextBox);
+            this.panel5.Controls.Add(this.yearsResidingTextBox);
+            this.panel5.Controls.Add(this.suffixTextBox);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.addressTextBox);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.civilStatusDropdown);
             this.panel5.Controls.Add(this.sexDropdown);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label5);
@@ -208,52 +167,159 @@
             this.panel5.Size = new System.Drawing.Size(439, 166);
             this.panel5.TabIndex = 34;
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 63);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 15);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Birth Date:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Last Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // birthDatePicker
+            // lastNameTextBox
             // 
-            this.birthDatePicker.CustomFormat = "MM/dd/yyyy";
-            this.birthDatePicker.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.birthDatePicker.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.birthDatePicker.Location = new System.Drawing.Point(72, 60);
-            this.birthDatePicker.MaxDate = new System.DateTime(2024, 6, 30, 0, 0, 0, 0);
-            this.birthDatePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.birthDatePicker.Name = "birthDatePicker";
-            this.birthDatePicker.Size = new System.Drawing.Size(100, 21);
-            this.birthDatePicker.TabIndex = 23;
-            this.birthDatePicker.Value = new System.DateTime(2003, 1, 1, 0, 0, 0, 0);
+            this.lastNameTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameTextBox.Location = new System.Drawing.Point(6, 28);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(96, 21);
+            this.lastNameTextBox.TabIndex = 9;
+            this.lastNameTextBox.TextChanged += new System.EventHandler(this.lastNameTextBox_TextChanged);
             // 
-            // label5
+            // occupationTextBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(174, 63);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Sex:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.occupationTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.occupationTextBox.Location = new System.Drawing.Point(262, 128);
+            this.occupationTextBox.Name = "occupationTextBox";
+            this.occupationTextBox.Size = new System.Drawing.Size(174, 21);
+            this.occupationTextBox.TabIndex = 31;
             // 
-            // label7
+            // firstNameTextBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(286, 65);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 15);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Civil Status:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.firstNameTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameTextBox.Location = new System.Drawing.Point(108, 28);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(148, 21);
+            this.firstNameTextBox.TabIndex = 11;
+            this.firstNameTextBox.TextChanged += new System.EventHandler(this.firstNameTextBox_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(178, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(79, 15);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Occupation:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // middleNameTextBox
+            // 
+            this.middleNameTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middleNameTextBox.Location = new System.Drawing.Point(262, 28);
+            this.middleNameTextBox.Name = "middleNameTextBox";
+            this.middleNameTextBox.Size = new System.Drawing.Size(97, 21);
+            this.middleNameTextBox.TabIndex = 12;
+            this.middleNameTextBox.TextChanged += new System.EventHandler(this.middleNameTextBox_TextChanged);
+            // 
+            // yearsResidingTextBox
+            // 
+            this.yearsResidingTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearsResidingTextBox.Location = new System.Drawing.Point(101, 128);
+            this.yearsResidingTextBox.Name = "yearsResidingTextBox";
+            this.yearsResidingTextBox.Size = new System.Drawing.Size(71, 21);
+            this.yearsResidingTextBox.TabIndex = 29;
+            // 
+            // suffixTextBox
+            // 
+            this.suffixTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suffixTextBox.Location = new System.Drawing.Point(365, 28);
+            this.suffixTextBox.Name = "suffixTextBox";
+            this.suffixTextBox.Size = new System.Drawing.Size(71, 21);
+            this.suffixTextBox.TabIndex = 13;
+            this.suffixTextBox.TextChanged += new System.EventHandler(this.suffixTextBox_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 130);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(95, 15);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Years Residing:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(105, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 15);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "First Name";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextBox.Location = new System.Drawing.Point(67, 98);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(369, 21);
+            this.addressTextBox.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(259, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 15);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Middle Name";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 15);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Address:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(362, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 15);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Suffix";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // civilStatusDropdown
+            // 
+            this.civilStatusDropdown.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.civilStatusDropdown.FormattingEnabled = true;
+            this.civilStatusDropdown.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.civilStatusDropdown.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Separated",
+            "Divorced",
+            "Widowed"});
+            this.civilStatusDropdown.Location = new System.Drawing.Point(360, 60);
+            this.civilStatusDropdown.Name = "civilStatusDropdown";
+            this.civilStatusDropdown.Size = new System.Drawing.Size(76, 23);
+            this.civilStatusDropdown.TabIndex = 25;
             // 
             // sexDropdown
             // 
@@ -269,155 +335,95 @@
             this.sexDropdown.Size = new System.Drawing.Size(79, 23);
             this.sexDropdown.TabIndex = 20;
             // 
-            // comboBox1
+            // label7
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Single",
-            "Married",
-            "Separated",
-            "Divorced",
-            "Widowed"});
-            this.comboBox1.Location = new System.Drawing.Point(360, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(76, 23);
-            this.comboBox1.TabIndex = 25;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(286, 65);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 15);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Civil Status:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(362, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Suffix";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(174, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Sex:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // birthDatePicker
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 100);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 15);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Address:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.birthDatePicker.CustomFormat = "MM/dd/yyyy";
+            this.birthDatePicker.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.birthDatePicker.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.birthDatePicker.Location = new System.Drawing.Point(72, 60);
+            this.birthDatePicker.MaxDate = new System.DateTime(2024, 6, 30, 0, 0, 0, 0);
+            this.birthDatePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.birthDatePicker.Name = "birthDatePicker";
+            this.birthDatePicker.Size = new System.Drawing.Size(100, 21);
+            this.birthDatePicker.TabIndex = 23;
+            this.birthDatePicker.Value = new System.DateTime(2003, 1, 1, 0, 0, 0, 0);
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(259, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 15);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Middle Name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 15);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Birth Date:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox5
+            // panel4
             // 
-            this.textBox5.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(67, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(369, 21);
-            this.textBox5.TabIndex = 27;
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.uploadPhotoButton);
+            this.panel4.Controls.Add(this.idImage);
+            this.panel4.Location = new System.Drawing.Point(16, 15);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(116, 166);
+            this.panel4.TabIndex = 33;
             // 
-            // label3
+            // label11
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 15);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "First Name";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(25, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 15);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "ID Picture";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // uploadPhotoButton
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 130);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 15);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Years Residing:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uploadPhotoButton.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadPhotoButton.Location = new System.Drawing.Point(28, 130);
+            this.uploadPhotoButton.Name = "uploadPhotoButton";
+            this.uploadPhotoButton.Size = new System.Drawing.Size(63, 23);
+            this.uploadPhotoButton.TabIndex = 32;
+            this.uploadPhotoButton.Text = "Upload";
+            this.uploadPhotoButton.UseVisualStyleBackColor = true;
+            this.uploadPhotoButton.Click += new System.EventHandler(this.uploadPhotoButton_Click);
             // 
-            // textBox4
+            // idImage
             // 
-            this.textBox4.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(365, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(71, 21);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(101, 128);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(71, 21);
-            this.textBox6.TabIndex = 29;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(262, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(97, 21);
-            this.textBox3.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(178, 130);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 15);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "Occupation:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(108, 28);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 21);
-            this.textBox2.TabIndex = 11;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(262, 128);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(174, 21);
-            this.textBox7.TabIndex = 31;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 21);
-            this.textBox1.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Last Name";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.idImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idImage.InitialImage = global::BIMS_dan.Properties.Resources._22;
+            this.idImage.Location = new System.Drawing.Point(9, 7);
+            this.idImage.Name = "idImage";
+            this.idImage.Size = new System.Drawing.Size(100, 100);
+            this.idImage.TabIndex = 33;
+            this.idImage.TabStop = false;
+            this.idImage.Click += new System.EventHandler(this.idImage_Click);
             // 
             // panel1
             // 
@@ -447,11 +453,11 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idImage)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -466,20 +472,20 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox lastNameTextBox;
+        private System.Windows.Forms.TextBox occupationTextBox;
+        private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox middleNameTextBox;
+        private System.Windows.Forms.TextBox yearsResidingTextBox;
+        private System.Windows.Forms.TextBox suffixTextBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox civilStatusDropdown;
         private System.Windows.Forms.ComboBox sexDropdown;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;

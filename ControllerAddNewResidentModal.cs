@@ -91,5 +91,35 @@ namespace BIMS_dan
         {
 
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.ParentForm.Close();
+        }
+
+        private void lastNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void middleNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suffixTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addNewResidentButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

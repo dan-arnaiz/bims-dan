@@ -227,6 +227,11 @@
     <Compile Include="SystemUserOptions.Designer.cs">
       <DependentUpon>SystemUserOptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="_dan_bimsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +288,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_dan_bimsDataSet3.xsc">
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet3.xss">
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -319,6 +335,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="residentimages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

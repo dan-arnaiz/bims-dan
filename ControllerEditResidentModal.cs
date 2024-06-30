@@ -21,5 +21,10 @@ namespace BIMS_dan
         {
 
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.ParentForm.Close();
+        }
     }
 }
