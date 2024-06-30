@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:maindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\controllerformrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:controllerformrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|solutionrelative:signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{209229C8-1405-4A38-BC70-E7F69717AE01}|BIMS-dan.csproj|e:\\mapua computer science\\oop-bims\\oop-bims-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,12 +85,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "SignInForm.Designer.cs",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.Designer.cs",
+              "RelativeDocumentMoniker": "SignInForm.Designer.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.Designer.cs",
+              "RelativeToolTip": "SignInForm.Designer.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAAAAwAABAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T00:28:37.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignInForm.cs [Design]",
+              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs",
+              "RelativeDocumentMoniker": "SignInForm.cs",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs [Design]",
+              "RelativeToolTip": "SignInForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T00:28:33.168Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SignInForm.cs",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs",
               "RelativeDocumentMoniker": "SignInForm.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs*",
-              "RelativeToolTip": "SignInForm.cs*",
+              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs",
+              "RelativeToolTip": "SignInForm.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAEwEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T00:13:46.809Z",
@@ -94,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "controllerFormRequests.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerFormRequests.cs",
               "RelativeDocumentMoniker": "controllerFormRequests.cs",
@@ -106,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainDashboard.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.cs",
               "RelativeDocumentMoniker": "MainDashboard.cs",
@@ -118,19 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignInForm.cs [Design]",
-              "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs",
-              "RelativeDocumentMoniker": "SignInForm.cs",
-              "ToolTip": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SignInForm.cs [Design]*",
-              "RelativeToolTip": "SignInForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T05:51:08.153Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -143,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "controllerBarangayOfficials.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerBarangayOfficials.cs",
               "RelativeDocumentMoniker": "controllerBarangayOfficials.cs",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "controllerDashboardActivities.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerDashboardActivities.cs",
               "RelativeDocumentMoniker": "controllerDashboardActivities.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "controllerBarangayEvents.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\controllerBarangayEvents.cs",
               "RelativeDocumentMoniker": "controllerBarangayEvents.cs",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainDashboard.cs",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.cs",
               "RelativeDocumentMoniker": "MainDashboard.cs",
@@ -192,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SystemUserOptions.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\SystemUserOptions.cs",
               "RelativeDocumentMoniker": "SystemUserOptions.cs",
@@ -204,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BarangayListsForm.cs [Design]",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\BarangayListsForm.cs",
               "RelativeDocumentMoniker": "BarangayListsForm.cs",
@@ -216,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MainDashboard.Designer.cs",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.Designer.cs",
               "RelativeDocumentMoniker": "MainDashboard.Designer.cs",
@@ -229,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainDashboard.resx",
               "DocumentMoniker": "E:\\MAPUA COMPUTER SCIENCE\\OOP-bims\\oop-bims-final\\MainDashboard.resx",
               "RelativeDocumentMoniker": "MainDashboard.resx",
@@ -241,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\Form1.cs",
               "ToolTip": "C:\\Users\\MY PC\\Desktop\\Dan Code\\computerscience\\OOP-bims-dan\\bims-dan\\Form1.cs",
