@@ -8,13 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BIMS_dan
-{
-public partial class controllerBarangayLists : UserControl
-{
-    public controllerBarangayLists()
-    {
-        InitializeComponent();
-    }
+namespace BIMS_dan {
+public partial class controllerBarangayLists : UserControl {
+  public controllerBarangayLists() { InitializeComponent(); }
 }
 }
