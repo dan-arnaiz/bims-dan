@@ -191,6 +191,7 @@
             this.addResidentButton.TabIndex = 1;
             this.addResidentButton.Text = "Add Resident";
             this.addResidentButton.UseVisualStyleBackColor = false;
+            this.addResidentButton.Click += new System.EventHandler(this.addResidentButton_Click);
             // 
             // controllerResidents
             // 

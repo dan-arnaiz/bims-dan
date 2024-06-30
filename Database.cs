@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BIMS_dan
 {
-    internal class Database
+    public class Database
     {
+        public readonly string connectionString;
+
+        public Database()
+        {
+            connectionString = @"Server=localhost;Database=dan-ims;Integrated Security=True;";
+        }
     }
 }

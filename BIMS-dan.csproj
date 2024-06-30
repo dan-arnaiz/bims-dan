@@ -158,6 +158,12 @@
     <Compile Include="BarangayListsForm.Designer.cs">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControllerAddNewResidentModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControllerAddNewResidentModal.Designer.cs">
+      <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="controllerBarangayEvents.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,6 +194,7 @@
     <Compile Include="controllerFormRequests.Designer.cs">
       <DependentUpon>controllerFormRequests.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +223,9 @@
     </Compile>
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerAddNewResidentModal.resx">
+      <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controllerBarangayEvents.resx">
       <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
@@ -297,6 +307,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="residentimages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
