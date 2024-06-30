@@ -78,5 +78,10 @@ namespace BIMS_dan
         {
             await LoadControlAsync(new controllerBarangayEvents());
         }
+
+        private void mainPlaceholder_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
