@@ -15,6 +15,7 @@ namespace BIMS_dan
 {
     public partial class ControllerAddNewResidentModal : UserControl
     {
+        public event EventHandler ResidentAdded;
         public ControllerAddNewResidentModal()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace BIMS_dan
         private void ControllerAddNewResidentModal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected virtual void OnResidentAdded()
+        {
+            ResidentAdded?.Invoke(this, EventArgs.Empty);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -192,6 +198,7 @@ namespace BIMS_dan
                 await db.AddResident(pictureData, lastName, firstName, middleName, birthdate, sex, civilStatus, address, yearsResiding, occupation);
                 MessageBox.Show("Resident added successfully!");
                 this.ParentForm.Close();
+                OnResidentAdded();
             }
             catch (Exception ex)
             {

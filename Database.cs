@@ -20,7 +20,7 @@ namespace BIMS_dan
 
         public async Task RefreshResidentsTableAsync(DataGridView residentsTable)
         {
-            string query = @"SELECT picture, lastName, firstName, middleName, birthdate, sex, civilStatus, address, yearsResiding, occupation FROM residentsTable";
+            string query = @"SELECT id, picture, lastName, firstName, middleName, birthdate, sex, civilStatus, address, yearsResiding, occupation FROM residentsTable";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -59,6 +59,22 @@ namespace BIMS_dan
                     cmd.Parameters.AddWithValue("@occupation", occupation);
 
                     await cmd.ExecuteNonQueryAsync();
+                }
+            }
+        }
+        public async Task<bool> DeleteResidentAsync(string id)
+        {
+            string query = "DELETE FROM residentsTable WHERE id = @id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    int result = await cmd.ExecuteNonQueryAsync();
+                    return result > 0;
                 }
             }
         }

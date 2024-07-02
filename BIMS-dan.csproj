@@ -232,6 +232,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_dan_bimsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_dan_bimsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_dan_bimsDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -303,6 +313,28 @@
     </None>
     <None Include="_dan_bimsDataSet.xss">
       <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet1.xsc">
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet1.xss">
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet2.xsc">
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet2.xss">
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
     </None>
     <None Include="_dan_bimsDataSet3.xsc">
       <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
