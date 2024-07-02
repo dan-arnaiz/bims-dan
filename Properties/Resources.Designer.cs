@@ -159,5 +159,15 @@ namespace BIMS_dan.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap default_profile_picture_placeholder_g4pw6l6c8ja53vbv {
+            get {
+                object obj = ResourceManager.GetObject("default-profile-picture-placeholder-g4pw6l6c8ja53vbv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

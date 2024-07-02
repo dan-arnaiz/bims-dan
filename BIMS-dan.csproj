@@ -158,6 +158,12 @@
     <Compile Include="BarangayListsForm.Designer.cs">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControllerAddNewResidentModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControllerAddNewResidentModal.Designer.cs">
+      <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="controllerBarangayEvents.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,12 +188,19 @@
     <Compile Include="controllerDashboardActivities.Designer.cs">
       <DependentUpon>controllerDashboardActivities.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControllerEditResidentModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControllerEditResidentModal.Designer.cs">
+      <DependentUpon>ControllerEditResidentModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="controllerFormRequests.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="controllerFormRequests.Designer.cs">
       <DependentUpon>controllerFormRequests.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,8 +227,31 @@
     <Compile Include="SystemUserOptions.Designer.cs">
       <DependentUpon>SystemUserOptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="_dan_bimsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_dan_bimsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_dan_bimsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_dan_bimsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerAddNewResidentModal.resx">
+      <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controllerBarangayEvents.resx">
       <DependentUpon>controllerBarangayEvents.cs</DependentUpon>
@@ -228,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controllerDashboardActivities.resx">
       <DependentUpon>controllerDashboardActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerEditResidentModal.resx">
+      <DependentUpon>ControllerEditResidentModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controllerFormRequests.resx">
       <DependentUpon>controllerFormRequests.cs</DependentUpon>
@@ -264,6 +303,50 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_dan_bimsDataSet.xsc">
+      <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet.xss">
+      <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet1.xsc">
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet1.xss">
+      <DependentUpon>_dan_bimsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet2.xsc">
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet2.xss">
+      <DependentUpon>_dan_bimsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet3.xsc">
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsDataSet3.xss">
+      <DependentUpon>_dan_bimsDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -297,6 +380,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="residentimages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-profile-picture-placeholder-g4pw6l6c8ja53vbv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
