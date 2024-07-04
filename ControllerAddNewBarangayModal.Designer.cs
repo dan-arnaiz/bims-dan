@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AddBarangayLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.barangayLogoLabel = new System.Windows.Forms.Label();
             this.uploadBarangayLogoButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BarangayLogoImage = new System.Windows.Forms.PictureBox();
             this.addressLabel = new System.Windows.Forms.Label();
             this.barangayAddressTextBox = new System.Windows.Forms.TextBox();
             this.BarangayNameTextBox = new System.Windows.Forms.TextBox();
@@ -45,25 +43,15 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.addNewBarangayButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.BarangayLogoImage = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BIMS_dan.Properties.Resources._32;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(614, 797);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -133,17 +121,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(184, 290);
             this.panel4.TabIndex = 33;
-            // 
-            // BarangayLogoImage
-            // 
-            this.BarangayLogoImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BarangayLogoImage.InitialImage = global::BIMS_dan.Properties.Resources._22;
-            this.BarangayLogoImage.Location = new System.Drawing.Point(16, 20);
-            this.BarangayLogoImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BarangayLogoImage.Name = "BarangayLogoImage";
-            this.BarangayLogoImage.Size = new System.Drawing.Size(149, 153);
-            this.BarangayLogoImage.TabIndex = 33;
-            this.BarangayLogoImage.TabStop = false;
             // 
             // addressLabel
             // 
@@ -253,6 +230,29 @@
             this.cancelButton.UseVisualStyleBackColor = false;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
+            // BarangayLogoImage
+            // 
+            this.BarangayLogoImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BarangayLogoImage.InitialImage = global::BIMS_dan.Properties.Resources._22;
+            this.BarangayLogoImage.Location = new System.Drawing.Point(16, 20);
+            this.BarangayLogoImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BarangayLogoImage.Name = "BarangayLogoImage";
+            this.BarangayLogoImage.Size = new System.Drawing.Size(149, 153);
+            this.BarangayLogoImage.TabIndex = 33;
+            this.BarangayLogoImage.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::BIMS_dan.Properties.Resources._32;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(614, 797);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // ControllerAddNewBarangayModal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -268,15 +268,15 @@
             this.Name = "ControllerAddNewBarangayModal";
             this.Size = new System.Drawing.Size(614, 797);
             this.Load += new System.EventHandler(this.ControllerAddNewBarangayModal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

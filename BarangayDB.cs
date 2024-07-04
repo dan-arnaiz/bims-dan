@@ -79,5 +79,54 @@ namespace BIMS_dan
                 }
             }
         }
+        public async Task<bool> UpdateBarangayAsync(string BarangayID, byte[] BarangayLogo, string barangayName, string address, string description)
+        {
+            string query = @"UPDATE Barangays 
+                     SET BarangayLogo = @BarangayLogo, BarangayName = @BarangayName, Address = @Address, Description = @Description 
+                     WHERE BarangayID = @BarangayID";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.Add("@BarangayLogo", SqlDbType.Image).Value = BarangayLogo ?? (object)DBNull.Value; // Handle null images
+                    cmd.Parameters.AddWithValue("@BarangayName", barangayName);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Description", description);
+                    cmd.Parameters.AddWithValue("@BarangayID", BarangayID);
+
+                    int result = await cmd.ExecuteNonQueryAsync();
+                    return result > 0; // Returns true if the update was successful, false otherwise
+                }
+            }
+        }
+
+        public async Task<DataTable> SearchBarangayAsync(string searchTerm)
+        {
+            string query = @"SELECT BarangayID, BarangayLogo, BarangayName, Address, Description 
+                     FROM Barangays 
+                     WHERE BarangayName LIKE @SearchTerm OR Address LIKE @SearchTerm";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    // Use % wildcards to search for any string containing the searchTerm
+                    cmd.Parameters.AddWithValue("@SearchTerm", $"%{searchTerm}%");
+                    DataTable barangaysDatatable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(barangaysDatatable);
+                    }
+                    return barangaysDatatable;
+                }
+            }
+        }
+
+
+
+
     }
 }
