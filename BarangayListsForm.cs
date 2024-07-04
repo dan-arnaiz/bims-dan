@@ -114,7 +114,7 @@ namespace BIMS_dan
                 string barangayDescription = dgv.Rows[e.RowIndex].Cells["descriptionDataGridViewTextBoxColumn"].Value.ToString();
 
                 // Update the Text of barangayLabelTitle with the selected barangay name
-                barangayLabelTitle.Text = barangayName;
+                barangayLabelTitle.Text = "Barangay " + barangayName;
                 addressplaceholder.Text = barangayAddress;
                 descriptionplaceholder.Text = barangayDescription;
 

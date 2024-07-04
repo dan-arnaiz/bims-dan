@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarangayListsForm));
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -64,17 +65,17 @@
             this.barangaysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barangaysTableAdapter = new BIMS_dan._dan_bimsBarangayDatasetTableAdapters.BarangaysTableAdapter();
             this.signOutButton = new System.Windows.Forms.Button();
-            this.barangayIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barangayLogoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.barangayNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.addresslabeldetails = new System.Windows.Forms.Label();
             this.descriptionlabeldetails = new System.Windows.Forms.Label();
             this.addressplaceholder = new System.Windows.Forms.Label();
             this.descriptionplaceholder = new System.Windows.Forms.Label();
+            this.barangayIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barangayLogoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.barangayNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -148,12 +149,12 @@
             this.barangayLabelTitle.AutoSize = true;
             this.barangayLabelTitle.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barangayLabelTitle.ForeColor = System.Drawing.Color.White;
-            this.barangayLabelTitle.Location = new System.Drawing.Point(25, 6);
+            this.barangayLabelTitle.Location = new System.Drawing.Point(67, 10);
             this.barangayLabelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.barangayLabelTitle.Name = "barangayLabelTitle";
-            this.barangayLabelTitle.Size = new System.Drawing.Size(233, 32);
+            this.barangayLabelTitle.Size = new System.Drawing.Size(296, 32);
             this.barangayLabelTitle.TabIndex = 8;
-            this.barangayLabelTitle.Text = "Select a Barangay";
+            this.barangayLabelTitle.Text = "Select a Barangay         ";
             this.barangayLabelTitle.Click += new System.EventHandler(this.barangayLabelTitle_Click);
             // 
             // panel3
@@ -439,7 +440,7 @@
             // barangaysDatatable
             // 
             this.barangaysDatatable.AutoGenerateColumns = false;
-            this.barangaysDatatable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.barangaysDatatable.ColumnHeadersHeight = 28;
             this.barangaysDatatable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.barangayIDDataGridViewTextBoxColumn,
             this.barangayLogoDataGridViewImageColumn,
@@ -447,11 +448,17 @@
             this.addressDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn});
             this.barangaysDatatable.DataSource = this.barangaysBindingSource;
+            this.barangaysDatatable.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.barangaysDatatable.Location = new System.Drawing.Point(8, 143);
             this.barangaysDatatable.Name = "barangaysDatatable";
             this.barangaysDatatable.RowHeadersVisible = false;
             this.barangaysDatatable.RowHeadersWidth = 62;
-            this.barangaysDatatable.RowTemplate.Height = 28;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.barangaysDatatable.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.barangaysDatatable.RowTemplate.Height = 100;
             this.barangaysDatatable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.barangaysDatatable.Size = new System.Drawing.Size(930, 606);
             this.barangaysDatatable.TabIndex = 1;
@@ -507,56 +514,13 @@
             this.signOutButton.UseVisualStyleBackColor = false;
             this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
             // 
-            // barangayIDDataGridViewTextBoxColumn
-            // 
-            this.barangayIDDataGridViewTextBoxColumn.DataPropertyName = "BarangayID";
-            this.barangayIDDataGridViewTextBoxColumn.HeaderText = "BarangayID";
-            this.barangayIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.barangayIDDataGridViewTextBoxColumn.Name = "barangayIDDataGridViewTextBoxColumn";
-            this.barangayIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.barangayIDDataGridViewTextBoxColumn.Visible = false;
-            this.barangayIDDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // barangayLogoDataGridViewImageColumn
-            // 
-            this.barangayLogoDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.barangayLogoDataGridViewImageColumn.DataPropertyName = "BarangayLogo";
-            this.barangayLogoDataGridViewImageColumn.HeaderText = "Barangay Logo";
-            this.barangayLogoDataGridViewImageColumn.Image = global::BIMS_dan.Properties.Resources._2;
-            this.barangayLogoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.barangayLogoDataGridViewImageColumn.MinimumWidth = 8;
-            this.barangayLogoDataGridViewImageColumn.Name = "barangayLogoDataGridViewImageColumn";
-            // 
-            // barangayNameDataGridViewTextBoxColumn
-            // 
-            this.barangayNameDataGridViewTextBoxColumn.DataPropertyName = "BarangayName";
-            this.barangayNameDataGridViewTextBoxColumn.HeaderText = "BarangayName";
-            this.barangayNameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.barangayNameDataGridViewTextBoxColumn.Name = "barangayNameDataGridViewTextBoxColumn";
-            this.barangayNameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 20;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 150;
-            // 
             // panel13
             // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.barangayLabelTitle);
-            this.panel13.Location = new System.Drawing.Point(95, 10);
+            this.panel13.Location = new System.Drawing.Point(-1, 10);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(296, 53);
+            this.panel13.Size = new System.Drawing.Size(469, 53);
             this.panel13.TabIndex = 18;
             // 
             // panel14
@@ -620,6 +584,50 @@
             this.descriptionplaceholder.TabIndex = 11;
             this.descriptionplaceholder.Text = "Select a Barangay";
             this.descriptionplaceholder.Click += new System.EventHandler(this.descriptionplaceholder_Click);
+            // 
+            // barangayIDDataGridViewTextBoxColumn
+            // 
+            this.barangayIDDataGridViewTextBoxColumn.DataPropertyName = "BarangayID";
+            this.barangayIDDataGridViewTextBoxColumn.HeaderText = "BarangayID";
+            this.barangayIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.barangayIDDataGridViewTextBoxColumn.Name = "barangayIDDataGridViewTextBoxColumn";
+            this.barangayIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.barangayIDDataGridViewTextBoxColumn.Visible = false;
+            this.barangayIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // barangayLogoDataGridViewImageColumn
+            // 
+            this.barangayLogoDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.barangayLogoDataGridViewImageColumn.DataPropertyName = "BarangayLogo";
+            this.barangayLogoDataGridViewImageColumn.HeaderText = "Barangay Logo";
+            this.barangayLogoDataGridViewImageColumn.Image = global::BIMS_dan.Properties.Resources._2;
+            this.barangayLogoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.barangayLogoDataGridViewImageColumn.MinimumWidth = 100;
+            this.barangayLogoDataGridViewImageColumn.Name = "barangayLogoDataGridViewImageColumn";
+            // 
+            // barangayNameDataGridViewTextBoxColumn
+            // 
+            this.barangayNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.barangayNameDataGridViewTextBoxColumn.DataPropertyName = "BarangayName";
+            this.barangayNameDataGridViewTextBoxColumn.HeaderText = "BarangayName";
+            this.barangayNameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.barangayNameDataGridViewTextBoxColumn.Name = "barangayNameDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
             // BarangayListsForm
             // 
@@ -706,16 +714,16 @@
         private _dan_bimsBarangayDatasetTableAdapters.BarangaysTableAdapter barangaysTableAdapter;
         private System.Windows.Forms.Button signOutButton;
         public System.Windows.Forms.DataGridView barangaysDatatable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn barangayIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn barangayLogoDataGridViewImageColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn barangayNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label descriptionlabeldetails;
         private System.Windows.Forms.Label addresslabeldetails;
         private System.Windows.Forms.Label descriptionplaceholder;
         private System.Windows.Forms.Label addressplaceholder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn barangayIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn barangayLogoDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn barangayNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
     }
 }
