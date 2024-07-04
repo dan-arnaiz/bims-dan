@@ -140,6 +140,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -152,11 +153,19 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication.cs" />
+    <Compile Include="BarangayDB.cs" />
     <Compile Include="BarangayListsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BarangayListsForm.Designer.cs">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerAddNewBarangayModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControllerAddNewBarangayModal.Designer.cs">
+      <DependentUpon>ControllerAddNewBarangayModal.cs</DependentUpon>
     </Compile>
     <Compile Include="ControllerAddNewResidentModal.cs">
       <SubType>UserControl</SubType>
@@ -221,11 +230,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SystemUserOptions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SystemUserOptions.Designer.cs">
       <DependentUpon>SystemUserOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_dan_bimsBarangayDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="_dan_bimsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -249,6 +275,9 @@
     </Compile>
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerAddNewBarangayModal.resx">
+      <DependentUpon>ControllerAddNewBarangayModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControllerAddNewResidentModal.resx">
       <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
@@ -290,8 +319,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SystemUserOptions.resx">
       <DependentUpon>SystemUserOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -303,6 +338,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_dan_bimsBarangayDataset.xsc">
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsBarangayDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsBarangayDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsBarangayDataset.xss">
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
+    </None>
     <None Include="_dan_bimsDataSet.xsc">
       <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
     </None>
@@ -382,6 +428,7 @@
     <None Include="Resources\22.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="barangayimages\" />
     <Folder Include="residentimages\" />
   </ItemGroup>
   <ItemGroup>
@@ -389,6 +436,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default-profile-picture-placeholder-g4pw6l6c8ja53vbv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
