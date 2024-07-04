@@ -15,6 +15,13 @@ namespace BIMS_dan
         public BarangayListsForm()
         {
             InitializeComponent();
+            this.Load += BarangayLists_refresh;
+            
+        }
+        private async void BarangayLists_refresh(object sender, EventArgs e)
+        {
+            BarangayDB db = new BarangayDB();
+            await db.RefreshBarangaysTableAsync(this.barangaysDatatable);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -68,6 +75,101 @@ namespace BIMS_dan
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignInForm signInForm = new SignInForm();
+            signInForm.ShowDialog();
+        }
+
+        private async void refreshBarangayTable_Click(object sender, EventArgs e)
+        {
+            BarangayDB db = new BarangayDB();
+            await db.RefreshBarangaysTableAsync(this.barangaysDatatable);
+        }
+
+
+
+        private void barangayLabelTitle_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            // Subscribe to the CellClick event
+            this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
+        }
+
+        private void barangaysDatatable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the click is on a row, not the column header
+            if (e.RowIndex >= 0)
+            {
+                // Access the DataGridView
+                DataGridView dgv = sender as DataGridView;
+                if (dgv == null) return;
+
+                // Get the 'barangayNameDataGridViewTextBoxColumn' column value of the clicked row
+                string barangayName = dgv.Rows[e.RowIndex].Cells["barangayNameDataGridViewTextBoxColumn"].Value.ToString();
+                string barangayAddress = dgv.Rows[e.RowIndex].Cells["addressDataGridViewTextBoxColumn"].Value.ToString();
+                string barangayDescription = dgv.Rows[e.RowIndex].Cells["descriptionDataGridViewTextBoxColumn"].Value.ToString();
+
+                // Update the Text of barangayLabelTitle with the selected barangay name
+                barangayLabelTitle.Text = barangayName;
+                addressplaceholder.Text = barangayAddress;
+                descriptionplaceholder.Text = barangayDescription;
+
+                var cellValue = dgv.Rows[e.RowIndex].Cells["barangayLogoDataGridViewImageColumn"].Value;
+                if (cellValue != DBNull.Value && cellValue is Image)
+                {
+                    // Update the Image of BarangayLogoPlaceholder with the selected image
+                    BarangayLogoPlaceholder.Image = cellValue as Image;
+                }
+                else
+                {
+                    // Optionally, set a default image if the cell value is not an image
+                    BarangayLogoPlaceholder.Image = null; // Or set to a default image
+                }
+            }
+
+        }
+        private void barangaysDatatable_SelectionChanged(object sender, EventArgs e)
+        {
+            // Check if there are any selected rows
+            if (barangaysDatatable.SelectedRows.Count > 0)
+            {
+                // Assuming 'barangayNameDataGridViewTextBoxColumn' is the name of the column
+                // Get the value from the first selected row
+                string selectedBarangayName = barangaysDatatable.SelectedRows[0].Cells["barangayNameDataGridViewTextBoxColumn"].Value.ToString();
+
+                // Update the Text of barangayLabelTitle with the selected barangay name
+                
+            }
+        }
+
+        private void addressplaceholder_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            // Subscribe to the CellClick event
+            this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
+        }
+
+        private void descriptionplaceholder_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            // Subscribe to the CellClick event
+            this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
+        }
+
+        private void addresslabeldetails_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BarangayLogoPlaceholder_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            // Subscribe to the CellClick event
+            this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
         }
     }
 }

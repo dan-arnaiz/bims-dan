@@ -24,7 +24,7 @@ namespace BIMS_dan
             // For example, after WelcomePage, you might want to show SignInPage
             // This can be determined by setting and checking some static variables or properties
             // For simplicity, directly showing SignInPage after WelcomePage closes
-            ShowForm(new BarangayListsForm());
+            ShowForm(new SignInForm());
         }
 
         static void ShowForm(Form form)

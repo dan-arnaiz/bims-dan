@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.barangayLabelTitle = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -57,17 +57,24 @@
             this.BarangaytableSettingsButton = new System.Windows.Forms.Button();
             this.refreshBarangayTable = new System.Windows.Forms.Button();
             this.systemUserOptions = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.barangaysDatatable = new System.Windows.Forms.DataGridView();
+            this.BarangayLogoPlaceholder = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this._dan_bimsBarangayDataset = new BIMS_dan._dan_bimsBarangayDataset();
             this.barangaysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barangaysTableAdapter = new BIMS_dan._dan_bimsBarangayDatasetTableAdapters.BarangaysTableAdapter();
+            this.signOutButton = new System.Windows.Forms.Button();
             this.barangayIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barangayLogoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.barangayNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.addresslabeldetails = new System.Windows.Forms.Label();
+            this.descriptionlabeldetails = new System.Windows.Forms.Label();
+            this.addressplaceholder = new System.Windows.Forms.Label();
+            this.descriptionplaceholder = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -79,11 +86,13 @@
             this.panel6.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barangaysDatatable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._dan_bimsBarangayDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysBindingSource)).BeginInit();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(116, 28);
+            this.label1.Location = new System.Drawing.Point(111, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 24);
@@ -102,22 +111,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(71)))), ((int)(((byte)(102)))));
+            this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(0, 282);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(465, 242);
+            this.panel2.Size = new System.Drawing.Size(465, 259);
             this.panel2.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(71)))), ((int)(((byte)(110)))));
+            this.panel1.Controls.Add(this.panel14);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(76, 57);
+            this.panel1.Location = new System.Drawing.Point(15, 71);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 154);
+            this.panel1.Size = new System.Drawing.Size(446, 183);
             this.panel1.TabIndex = 12;
             // 
             // label4
@@ -125,29 +135,31 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(59, 14);
+            this.label4.Location = new System.Drawing.Point(171, 8);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 27);
+            this.label4.Size = new System.Drawing.Size(83, 27);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Barangay Details";
+            this.label4.Text = "Details";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label5
+            // barangayLabelTitle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(93, 9);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(297, 32);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Barangay Lorem Ipsum";
+            this.barangayLabelTitle.AutoSize = true;
+            this.barangayLabelTitle.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barangayLabelTitle.ForeColor = System.Drawing.Color.White;
+            this.barangayLabelTitle.Location = new System.Drawing.Point(25, 6);
+            this.barangayLabelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.barangayLabelTitle.Name = "barangayLabelTitle";
+            this.barangayLabelTitle.Size = new System.Drawing.Size(233, 32);
+            this.barangayLabelTitle.TabIndex = 8;
+            this.barangayLabelTitle.Text = "Select a Barangay";
+            this.barangayLabelTitle.Click += new System.EventHandler(this.barangayLabelTitle_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(157)))));
+            this.panel3.Controls.Add(this.signOutButton);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -181,7 +193,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1437, 110);
+            this.panel4.Size = new System.Drawing.Size(1437, 111);
             this.panel4.TabIndex = 7;
             // 
             // label3
@@ -200,6 +212,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.selectBarangayButton);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Controls.Add(this.editBarangayButton);
@@ -207,10 +220,10 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 110);
+            this.panel5.Location = new System.Drawing.Point(0, 111);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(468, 758);
+            this.panel5.Size = new System.Drawing.Size(468, 757);
             this.panel5.TabIndex = 8;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -219,7 +232,7 @@
             this.selectBarangayButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(71)))), ((int)(((byte)(102)))));
             this.selectBarangayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectBarangayButton.ForeColor = System.Drawing.Color.White;
-            this.selectBarangayButton.Location = new System.Drawing.Point(153, 532);
+            this.selectBarangayButton.Location = new System.Drawing.Point(153, 551);
             this.selectBarangayButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.selectBarangayButton.Name = "selectBarangayButton";
             this.selectBarangayButton.Size = new System.Drawing.Size(158, 43);
@@ -232,7 +245,7 @@
             this.editBarangayButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.editBarangayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editBarangayButton.ForeColor = System.Drawing.Color.Black;
-            this.editBarangayButton.Location = new System.Drawing.Point(153, 585);
+            this.editBarangayButton.Location = new System.Drawing.Point(153, 604);
             this.editBarangayButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editBarangayButton.Name = "editBarangayButton";
             this.editBarangayButton.Size = new System.Drawing.Size(158, 43);
@@ -256,8 +269,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(157)))));
-            this.panel7.Controls.Add(this.pictureBox1);
-            this.panel7.Location = new System.Drawing.Point(153, 85);
+            this.panel7.Controls.Add(this.BarangayLogoPlaceholder);
+            this.panel7.Location = new System.Drawing.Point(153, 98);
             this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(158, 162);
@@ -272,7 +285,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(468, 58);
+            this.panel8.Size = new System.Drawing.Size(466, 87);
             this.panel8.TabIndex = 6;
             // 
             // panel9
@@ -283,7 +296,7 @@
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(468, 25);
+            this.panel9.Size = new System.Drawing.Size(466, 38);
             this.panel9.TabIndex = 7;
             // 
             // panel10
@@ -293,13 +306,13 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(468, 35);
+            this.panel10.Size = new System.Drawing.Size(466, 53);
             this.panel10.TabIndex = 6;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.barangaysDatatable);
             this.panel6.Controls.Add(this.panel11);
             this.panel6.Location = new System.Drawing.Point(476, 118);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -408,6 +421,7 @@
             this.refreshBarangayTable.TabIndex = 16;
             this.refreshBarangayTable.Text = "Refresh";
             this.refreshBarangayTable.UseVisualStyleBackColor = false;
+            this.refreshBarangayTable.Click += new System.EventHandler(this.refreshBarangayTable_Click);
             // 
             // systemUserOptions
             // 
@@ -422,33 +436,37 @@
             this.systemUserOptions.Text = "System User Options";
             this.systemUserOptions.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // barangaysDatatable
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.barangaysDatatable.AutoGenerateColumns = false;
+            this.barangaysDatatable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.barangaysDatatable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.barangayIDDataGridViewTextBoxColumn,
             this.barangayLogoDataGridViewImageColumn,
             this.barangayNameDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.barangaysBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(930, 606);
-            this.dataGridView1.TabIndex = 1;
+            this.barangaysDatatable.DataSource = this.barangaysBindingSource;
+            this.barangaysDatatable.Location = new System.Drawing.Point(8, 143);
+            this.barangaysDatatable.Name = "barangaysDatatable";
+            this.barangaysDatatable.RowHeadersVisible = false;
+            this.barangaysDatatable.RowHeadersWidth = 62;
+            this.barangaysDatatable.RowTemplate.Height = 28;
+            this.barangaysDatatable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.barangaysDatatable.Size = new System.Drawing.Size(930, 606);
+            this.barangaysDatatable.TabIndex = 1;
+            this.barangaysDatatable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
             // 
-            // pictureBox1
+            // BarangayLogoPlaceholder
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 152);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.BarangayLogoPlaceholder.InitialImage = global::BIMS_dan.Properties.Resources._21;
+            this.BarangayLogoPlaceholder.Location = new System.Drawing.Point(4, 5);
+            this.BarangayLogoPlaceholder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BarangayLogoPlaceholder.Name = "BarangayLogoPlaceholder";
+            this.BarangayLogoPlaceholder.Size = new System.Drawing.Size(148, 152);
+            this.BarangayLogoPlaceholder.TabIndex = 0;
+            this.BarangayLogoPlaceholder.TabStop = false;
+            this.BarangayLogoPlaceholder.Click += new System.EventHandler(this.BarangayLogoPlaceholder_Click);
             // 
             // pictureBox2
             // 
@@ -475,6 +493,20 @@
             // 
             this.barangaysTableAdapter.ClearBeforeFill = true;
             // 
+            // signOutButton
+            // 
+            this.signOutButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.signOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signOutButton.ForeColor = System.Drawing.Color.Black;
+            this.signOutButton.Location = new System.Drawing.Point(14, 6);
+            this.signOutButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.signOutButton.Name = "signOutButton";
+            this.signOutButton.Size = new System.Drawing.Size(140, 32);
+            this.signOutButton.TabIndex = 19;
+            this.signOutButton.Text = "Sign Out";
+            this.signOutButton.UseVisualStyleBackColor = false;
+            this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
+            // 
             // barangayIDDataGridViewTextBoxColumn
             // 
             this.barangayIDDataGridViewTextBoxColumn.DataPropertyName = "BarangayID";
@@ -487,14 +519,13 @@
             // 
             // barangayLogoDataGridViewImageColumn
             // 
-            this.barangayLogoDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.barangayLogoDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.barangayLogoDataGridViewImageColumn.DataPropertyName = "BarangayLogo";
             this.barangayLogoDataGridViewImageColumn.HeaderText = "Barangay Logo";
             this.barangayLogoDataGridViewImageColumn.Image = global::BIMS_dan.Properties.Resources._2;
             this.barangayLogoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.barangayLogoDataGridViewImageColumn.MinimumWidth = 8;
             this.barangayLogoDataGridViewImageColumn.Name = "barangayLogoDataGridViewImageColumn";
-            this.barangayLogoDataGridViewImageColumn.Width = 123;
             // 
             // barangayNameDataGridViewTextBoxColumn
             // 
@@ -516,9 +547,79 @@
             // 
             this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
             this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 20;
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             this.descriptionDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.barangayLabelTitle);
+            this.panel13.Location = new System.Drawing.Point(95, 10);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(296, 53);
+            this.panel13.TabIndex = 18;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.descriptionplaceholder);
+            this.panel14.Controls.Add(this.addressplaceholder);
+            this.panel14.Controls.Add(this.descriptionlabeldetails);
+            this.panel14.Controls.Add(this.addresslabeldetails);
+            this.panel14.Location = new System.Drawing.Point(14, 35);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(412, 142);
+            this.panel14.TabIndex = 19;
+            // 
+            // addresslabeldetails
+            // 
+            this.addresslabeldetails.AutoSize = true;
+            this.addresslabeldetails.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addresslabeldetails.ForeColor = System.Drawing.Color.White;
+            this.addresslabeldetails.Location = new System.Drawing.Point(25, 6);
+            this.addresslabeldetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.addresslabeldetails.Name = "addresslabeldetails";
+            this.addresslabeldetails.Size = new System.Drawing.Size(122, 33);
+            this.addresslabeldetails.TabIndex = 8;
+            this.addresslabeldetails.Text = "Address:";
+            this.addresslabeldetails.Click += new System.EventHandler(this.addresslabeldetails_Click);
+            // 
+            // descriptionlabeldetails
+            // 
+            this.descriptionlabeldetails.AutoSize = true;
+            this.descriptionlabeldetails.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionlabeldetails.ForeColor = System.Drawing.Color.White;
+            this.descriptionlabeldetails.Location = new System.Drawing.Point(25, 73);
+            this.descriptionlabeldetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.descriptionlabeldetails.Name = "descriptionlabeldetails";
+            this.descriptionlabeldetails.Size = new System.Drawing.Size(165, 33);
+            this.descriptionlabeldetails.TabIndex = 9;
+            this.descriptionlabeldetails.Text = "Description:";
+            // 
+            // addressplaceholder
+            // 
+            this.addressplaceholder.AutoSize = true;
+            this.addressplaceholder.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressplaceholder.ForeColor = System.Drawing.Color.White;
+            this.addressplaceholder.Location = new System.Drawing.Point(25, 39);
+            this.addressplaceholder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.addressplaceholder.Name = "addressplaceholder";
+            this.addressplaceholder.Size = new System.Drawing.Size(242, 33);
+            this.addressplaceholder.TabIndex = 10;
+            this.addressplaceholder.Text = "Select a Barangay";
+            this.addressplaceholder.Click += new System.EventHandler(this.addressplaceholder_Click);
+            // 
+            // descriptionplaceholder
+            // 
+            this.descriptionplaceholder.AutoSize = true;
+            this.descriptionplaceholder.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionplaceholder.ForeColor = System.Drawing.Color.White;
+            this.descriptionplaceholder.Location = new System.Drawing.Point(25, 106);
+            this.descriptionplaceholder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.descriptionplaceholder.Name = "descriptionplaceholder";
+            this.descriptionplaceholder.Size = new System.Drawing.Size(242, 33);
+            this.descriptionplaceholder.TabIndex = 11;
+            this.descriptionplaceholder.Text = "Select a Barangay";
+            this.descriptionplaceholder.Click += new System.EventHandler(this.descriptionplaceholder_Click);
             // 
             // BarangayListsForm
             // 
@@ -540,7 +641,6 @@
             this.Text = "Barangay Information Management System";
             this.Load += new System.EventHandler(this.BarangayListsForm_Load);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -557,11 +657,15 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barangaysDatatable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._dan_bimsBarangayDataset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysBindingSource)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -582,11 +686,11 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BarangayLogoPlaceholder;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label barangayLabelTitle;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
@@ -597,14 +701,21 @@
         private System.Windows.Forms.Button BarangaytableSettingsButton;
         private System.Windows.Forms.Button refreshBarangayTable;
         private System.Windows.Forms.Button systemUserOptions;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private _dan_bimsBarangayDataset _dan_bimsBarangayDataset;
         private System.Windows.Forms.BindingSource barangaysBindingSource;
         private _dan_bimsBarangayDatasetTableAdapters.BarangaysTableAdapter barangaysTableAdapter;
+        private System.Windows.Forms.Button signOutButton;
+        public System.Windows.Forms.DataGridView barangaysDatatable;
         private System.Windows.Forms.DataGridViewTextBoxColumn barangayIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn barangayLogoDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn barangayNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label descriptionlabeldetails;
+        private System.Windows.Forms.Label addresslabeldetails;
+        private System.Windows.Forms.Label descriptionplaceholder;
+        private System.Windows.Forms.Label addressplaceholder;
     }
 }

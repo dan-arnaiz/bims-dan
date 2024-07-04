@@ -15,6 +15,25 @@ namespace BIMS_dan
     {
         private string connectionString = @"Server=localhost;Database=dan-bims;Integrated Security=True;"; // Update with your actual connection string
 
+
+        public async Task RefreshBarangaysTableAsync(DataGridView barangaysDatatable)
+        {
+            string query = @"SELECT BarangayID, BarangayLogo, BarangayName, Address, Description FROM Barangays";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    DataTable dataTable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                    barangaysDatatable.DataSource = dataTable;
+                }
+            }
+        }
         public async Task AddNewBarangay(byte[] BarangayLogo, string barangayName, string address, string description)
         {
             string query = @"INSERT INTO Barangays (BarangayLogo, BarangayName, Address, Description) 

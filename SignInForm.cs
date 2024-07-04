@@ -84,6 +84,8 @@ namespace BIMS_dan
                 // Login successful
                 MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Proceed to the next part of your application
+
+                
                 this.Hide();
                 BarangayListsForm barangayListsForm = new BarangayListsForm();
                 barangayListsForm.ShowDialog();
