@@ -154,11 +154,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication.cs" />
+    <Compile Include="BarangayDB.cs" />
     <Compile Include="BarangayListsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BarangayListsForm.Designer.cs">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerAddNewBarangayModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControllerAddNewBarangayModal.Designer.cs">
+      <DependentUpon>ControllerAddNewBarangayModal.cs</DependentUpon>
     </Compile>
     <Compile Include="ControllerAddNewResidentModal.cs">
       <SubType>UserControl</SubType>
@@ -241,6 +248,11 @@
     <Compile Include="WelcomePage.Designer.cs">
       <DependentUpon>WelcomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="_dan_bimsBarangayDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_dan_bimsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -263,6 +275,9 @@
     </Compile>
     <EmbeddedResource Include="BarangayListsForm.resx">
       <DependentUpon>BarangayListsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerAddNewBarangayModal.resx">
+      <DependentUpon>ControllerAddNewBarangayModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControllerAddNewResidentModal.resx">
       <DependentUpon>ControllerAddNewResidentModal.cs</DependentUpon>
@@ -323,6 +338,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_dan_bimsBarangayDataset.xsc">
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
+    </None>
+    <None Include="_dan_bimsBarangayDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dan_bimsBarangayDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dan_bimsBarangayDataset.xss">
+      <DependentUpon>_dan_bimsBarangayDataset.xsd</DependentUpon>
+    </None>
     <None Include="_dan_bimsDataSet.xsc">
       <DependentUpon>_dan_bimsDataSet.xsd</DependentUpon>
     </None>
