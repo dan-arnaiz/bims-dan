@@ -266,6 +266,7 @@
             this.deleteBarangayButton.TabIndex = 9;
             this.deleteBarangayButton.Text = "Delete Barangay";
             this.deleteBarangayButton.UseVisualStyleBackColor = false;
+            this.deleteBarangayButton.Click += new System.EventHandler(this.deleteBarangayButton_Click);
             // 
             // panel7
             // 

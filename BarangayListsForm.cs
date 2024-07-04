@@ -171,5 +171,59 @@ namespace BIMS_dan
             // Subscribe to the CellClick event
             this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
         }
+
+        private async void deleteBarangayButton_Click(object sender, EventArgs e)
+        {
+            if (barangaysDatatable.SelectedRows.Count > 0)
+            {
+                var confirmResult = MessageBox.Show("Are you sure you want to delete this barangay? All residents in this Barangay will also be deleted.",
+                                                     "Confirm Delete",
+                                                     MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    int idColumnIndex = barangaysDatatable.Columns["barangayIDDataGridViewTextBoxColumn"].Index; // Ensure this matches the actual column name in your DataGridView
+
+                    BarangayDB db = new BarangayDB();
+                    bool refreshNeeded = false;
+
+                    foreach (DataGridViewRow row in barangaysDatatable.SelectedRows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            // Check for null value before calling ToString()
+                            var cellValue = row.Cells[idColumnIndex].Value;
+                            if (cellValue != null)
+                            {
+                                var barangayId = cellValue.ToString();
+                                bool success = await db.DeleteBarangayAsync(barangayId);
+                                if (success)
+                                {
+                                    barangaysDatatable.Rows.Remove(row);
+                                    refreshNeeded = true;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Failed to delete barangay.");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Barangay ID is missing.");
+                            }
+                        }
+                    }
+
+                    // If at least one row was successfully deleted, refresh the DataGridView
+                    if (refreshNeeded)
+                    {
+                        await db.RefreshBarangaysTableAsync(barangaysDatatable);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.");
+            }
+        }
     }
 }

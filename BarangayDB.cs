@@ -62,5 +62,22 @@ namespace BIMS_dan
                 return ms.ToArray();
             }
         }
+
+        public async Task<bool> DeleteBarangayAsync(string BarangayID)
+        {
+            string query = "DELETE FROM Barangays WHERE BarangayID = @BarangayID";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@BarangayID", BarangayID);
+
+                    int result = await cmd.ExecuteNonQueryAsync();
+                    return result > 0;
+                }
+            }
+        }
     }
 }
