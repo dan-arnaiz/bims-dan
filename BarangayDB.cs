@@ -15,21 +15,22 @@ namespace BIMS_dan
     {
         private string connectionString = @"Server=localhost;Database=dan-bims;Integrated Security=True;"; // Update with your actual connection string
 
-        public void AddNewBarangay(string barangayName, string address, string description, byte[] logo)
+        public async Task AddNewBarangay(byte[] BarangayLogo, string barangayName, string address, string description)
         {
-            using (var connection = new SqlConnection(connectionString))
+            string query = @"INSERT INTO Barangays (BarangayLogo, BarangayName, Address, Description) 
+                 VALUES (@BarangayLogo, @BarangayName, @Address, @Description)";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                var query = "INSERT INTO Barangays (BarangayLogo, BarangayName, Address, Description) VALUES (@Logo, @Name, @Address, @Description)";
-
-                using (var command = new SqlCommand(query, connection))
+                await conn.OpenAsync();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    command.Parameters.AddWithValue("@Logo", logo);
-                    command.Parameters.AddWithValue("@Name", barangayName);
-                    command.Parameters.AddWithValue("@Address", address);
-                    command.Parameters.AddWithValue("@Description", description);
+                    cmd.Parameters.Add("@BarangayLogo", SqlDbType.Image).Value = BarangayLogo;
+                    cmd.Parameters.AddWithValue("@BarangayName", barangayName);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Description", description);
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
+                    await cmd.ExecuteNonQueryAsync();
                 }
             }
         }

@@ -428,6 +428,7 @@
     <None Include="Resources\22.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="barangayimages\" />
     <Folder Include="residentimages\" />
   </ItemGroup>
   <ItemGroup>

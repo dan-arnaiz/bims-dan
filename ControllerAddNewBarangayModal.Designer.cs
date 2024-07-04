@@ -35,7 +35,7 @@
             this.barangayLogoLabel = new System.Windows.Forms.Label();
             this.uploadBarangayLogoButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BarangayLogo = new System.Windows.Forms.PictureBox();
+            this.BarangayLogoImage = new System.Windows.Forms.PictureBox();
             this.addressLabel = new System.Windows.Forms.Label();
             this.barangayAddressTextBox = new System.Windows.Forms.TextBox();
             this.BarangayNameTextBox = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(592, 741);
+            this.pictureBox1.Size = new System.Drawing.Size(614, 797);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -74,7 +74,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(592, 71);
+            this.panel2.Size = new System.Drawing.Size(614, 71);
             this.panel2.TabIndex = 6;
             // 
             // AddBarangayLabel
@@ -122,10 +122,11 @@
             this.uploadBarangayLogoButton.TabIndex = 32;
             this.uploadBarangayLogoButton.Text = "Upload";
             this.uploadBarangayLogoButton.UseVisualStyleBackColor = true;
+            this.uploadBarangayLogoButton.Click += new System.EventHandler(this.uploadBarangayLogoButton_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.BarangayLogo);
+            this.panel4.Controls.Add(this.BarangayLogoImage);
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Location = new System.Drawing.Point(208, 88);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -133,16 +134,16 @@
             this.panel4.Size = new System.Drawing.Size(184, 290);
             this.panel4.TabIndex = 33;
             // 
-            // BarangayLogo
+            // BarangayLogoImage
             // 
-            this.BarangayLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BarangayLogo.InitialImage = global::BIMS_dan.Properties.Resources._22;
-            this.BarangayLogo.Location = new System.Drawing.Point(17, 14);
-            this.BarangayLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BarangayLogo.Name = "BarangayLogo";
-            this.BarangayLogo.Size = new System.Drawing.Size(149, 153);
-            this.BarangayLogo.TabIndex = 33;
-            this.BarangayLogo.TabStop = false;
+            this.BarangayLogoImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BarangayLogoImage.InitialImage = global::BIMS_dan.Properties.Resources._22;
+            this.BarangayLogoImage.Location = new System.Drawing.Point(16, 20);
+            this.BarangayLogoImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BarangayLogoImage.Name = "BarangayLogoImage";
+            this.BarangayLogoImage.Size = new System.Drawing.Size(149, 153);
+            this.BarangayLogoImage.TabIndex = 33;
+            this.BarangayLogoImage.TabStop = false;
             // 
             // addressLabel
             // 
@@ -256,7 +257,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 741);
             this.Controls.Add(this.addNewBarangayButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.panel4);
@@ -266,6 +266,7 @@
             this.MaximumSize = new System.Drawing.Size(614, 797);
             this.MinimumSize = new System.Drawing.Size(614, 797);
             this.Name = "ControllerAddNewBarangayModal";
+            this.Size = new System.Drawing.Size(614, 797);
             this.Load += new System.EventHandler(this.ControllerAddNewBarangayModal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -273,7 +274,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoImage)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -289,15 +290,15 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label barangayLogoLabel;
         private System.Windows.Forms.Button uploadBarangayLogoButton;
-        private System.Windows.Forms.PictureBox BarangayLogo;
+        private System.Windows.Forms.PictureBox BarangayLogoImage;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox barangayDescriptionTextBox;
         private System.Windows.Forms.Label Description;
         private System.Windows.Forms.Label barangayNameLabel;
-        private System.Windows.Forms.TextBox BarangayNameTextBox;
         private System.Windows.Forms.TextBox barangayAddressTextBox;
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.Button addNewBarangayButton;
         private System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.TextBox BarangayNameTextBox;
     }
 }

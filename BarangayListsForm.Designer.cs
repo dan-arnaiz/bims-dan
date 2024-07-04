@@ -181,7 +181,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1437, 108);
+            this.panel4.Size = new System.Drawing.Size(1437, 110);
             this.panel4.TabIndex = 7;
             // 
             // label3
@@ -207,10 +207,10 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 108);
+            this.panel5.Location = new System.Drawing.Point(0, 110);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(465, 760);
+            this.panel5.Size = new System.Drawing.Size(468, 758);
             this.panel5.TabIndex = 8;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -272,7 +272,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(465, 58);
+            this.panel8.Size = new System.Drawing.Size(468, 58);
             this.panel8.TabIndex = 6;
             // 
             // panel9
@@ -283,7 +283,7 @@
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(465, 25);
+            this.panel9.Size = new System.Drawing.Size(468, 25);
             this.panel9.TabIndex = 7;
             // 
             // panel10
@@ -293,7 +293,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(465, 35);
+            this.panel10.Size = new System.Drawing.Size(468, 35);
             this.panel10.TabIndex = 6;
             // 
             // panel6
@@ -435,6 +435,7 @@
             this.dataGridView1.DataSource = this.barangaysBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(1, 141);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(930, 606);
@@ -481,15 +482,19 @@
             this.barangayIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.barangayIDDataGridViewTextBoxColumn.Name = "barangayIDDataGridViewTextBoxColumn";
             this.barangayIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.barangayIDDataGridViewTextBoxColumn.Visible = false;
             this.barangayIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // barangayLogoDataGridViewImageColumn
             // 
+            this.barangayLogoDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.barangayLogoDataGridViewImageColumn.DataPropertyName = "BarangayLogo";
-            this.barangayLogoDataGridViewImageColumn.HeaderText = "BarangayLogo";
+            this.barangayLogoDataGridViewImageColumn.HeaderText = "Barangay Logo";
+            this.barangayLogoDataGridViewImageColumn.Image = global::BIMS_dan.Properties.Resources._2;
+            this.barangayLogoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.barangayLogoDataGridViewImageColumn.MinimumWidth = 8;
             this.barangayLogoDataGridViewImageColumn.Name = "barangayLogoDataGridViewImageColumn";
-            this.barangayLogoDataGridViewImageColumn.Width = 150;
+            this.barangayLogoDataGridViewImageColumn.Width = 123;
             // 
             // barangayNameDataGridViewTextBoxColumn
             // 
