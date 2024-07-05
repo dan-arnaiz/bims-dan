@@ -77,7 +77,7 @@ public class Database {
   public async Task<DataTable> SearchResidentAsync(string searchTerm) {
     string query =
         @"SELECT id, picture, lastName, firstName, middleName, birthdate, sex, civilStatus, address, yearsResiding, occupation
-                     FROM residentsTable 
+                     FROM residentsTable
                      WHERE lastName LIKE @SearchTerm OR firstName LIKE @SearchTerm OR address LIKE @SearchTerm";
 
     using (SqlConnection conn = new SqlConnection(connectionString)) {

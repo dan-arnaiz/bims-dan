@@ -75,7 +75,7 @@ internal class BarangayDB {
   UpdateBarangayAsync(string BarangayID, byte[] BarangayLogo,
                       string barangayName, string address, string description) {
     string query = @"UPDATE Barangays
-                     SET BarangayLogo = @BarangayLogo, BarangayName = @BarangayName, Address = @Address, Description = @Description 
+                     SET BarangayLogo = @BarangayLogo, BarangayName = @BarangayName, Address = @Address, Description = @Description
                      WHERE BarangayID = @BarangayID";
 
     using (SqlConnection conn = new SqlConnection(connectionString)) {
@@ -98,7 +98,7 @@ internal class BarangayDB {
   public async Task<DataTable> SearchBarangayAsync(string searchTerm) {
     string query =
         @"SELECT BarangayID, BarangayLogo, BarangayName, Address, Description
-                     FROM Barangays 
+                     FROM Barangays
                      WHERE BarangayName LIKE @SearchTerm OR Address LIKE @SearchTerm";
 
     using (SqlConnection conn = new SqlConnection(connectionString)) {
