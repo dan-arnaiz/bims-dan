@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.residentsTable = new System.Windows.Forms.DataGridView();
+            this.residentsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._dan_bimsDataSet2 = new BIMS_dan._dan_bimsDataSet2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableSettingsButton = new System.Windows.Forms.Button();
             this.refreshResidents = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.searchLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this._dan_bimsDataSet2 = new BIMS_dan._dan_bimsDataSet2();
-            this.residentsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.residentsTableTableAdapter = new BIMS_dan._dan_bimsDataSet2TableAdapters.residentsTableTableAdapter();
             this.numColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,10 +61,10 @@
             this.yearsResidingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.occupationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.residentsTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // residentsTable
@@ -97,6 +97,16 @@
             this.residentsTable.Size = new System.Drawing.Size(1066, 608);
             this.residentsTable.TabIndex = 1;
             this.residentsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.residentsTable_CellContentClick);
+            // 
+            // residentsTableBindingSource
+            // 
+            this.residentsTableBindingSource.DataMember = "residentsTable";
+            this.residentsTableBindingSource.DataSource = this._dan_bimsDataSet2;
+            // 
+            // _dan_bimsDataSet2
+            // 
+            this._dan_bimsDataSet2.DataSetName = "_dan_bimsDataSet2";
+            this._dan_bimsDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
@@ -261,27 +271,17 @@
             this.dataGridViewImageColumn1.MinimumWidth = 8;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
-            // _dan_bimsDataSet2
-            // 
-            this._dan_bimsDataSet2.DataSetName = "_dan_bimsDataSet2";
-            this._dan_bimsDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // residentsTableBindingSource
-            // 
-            this.residentsTableBindingSource.DataMember = "residentsTable";
-            this.residentsTableBindingSource.DataSource = this._dan_bimsDataSet2;
-            // 
             // residentsTableTableAdapter
             // 
             this.residentsTableTableAdapter.ClearBeforeFill = true;
             // 
             // numColumn
             // 
+            this.numColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.numColumn.HeaderText = "";
-            this.numColumn.MinimumWidth = 8;
+            this.numColumn.MinimumWidth = 50;
             this.numColumn.Name = "numColumn";
             this.numColumn.ReadOnly = true;
-            this.numColumn.Width = 150;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -295,16 +295,16 @@
             // 
             // pictureDataGridViewImageColumn
             // 
+            this.pictureDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.pictureDataGridViewImageColumn.DataPropertyName = "picture";
             this.pictureDataGridViewImageColumn.HeaderText = "picture";
-            this.pictureDataGridViewImageColumn.MinimumWidth = 8;
+            this.pictureDataGridViewImageColumn.MinimumWidth = 100;
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
-            this.pictureDataGridViewImageColumn.Width = 150;
             // 
             // lastNameDataGridViewTextBoxColumn
             // 
             this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
             this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
             this.lastNameDataGridViewTextBoxColumn.Width = 150;
@@ -312,7 +312,7 @@
             // firstNameDataGridViewTextBoxColumn
             // 
             this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
             this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
             this.firstNameDataGridViewTextBoxColumn.Width = 150;
@@ -320,7 +320,7 @@
             // middleNameDataGridViewTextBoxColumn
             // 
             this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "middleName";
-            this.middleNameDataGridViewTextBoxColumn.HeaderText = "middleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
             this.middleNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
             this.middleNameDataGridViewTextBoxColumn.Width = 150;
@@ -402,12 +402,12 @@
             this.Name = "controllerResidents";
             this.Size = new System.Drawing.Size(1076, 757);
             ((System.ComponentModel.ISupportInitialize)(this.residentsTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._dan_bimsDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.residentsTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
