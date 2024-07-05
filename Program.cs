@@ -6,28 +6,28 @@ using System.Windows.Forms;
 
 namespace BIMS_dan
 {
-    internal static class Program
+internal static class Program
+{
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
 
-            // Start with the WelcomePage
-            ShowForm(new WelcomePage());
+        // Start with the WelcomePage
+        ShowForm(new WelcomePage());
 
-            
-            ShowForm(new SignInForm());
-        }
 
-        static void ShowForm(Form form)
-        {
-
-            Application.Run(form);
-        }
+        ShowForm(new SignInForm());
     }
+
+    static void ShowForm(Form form)
+    {
+
+        Application.Run(form);
+    }
+}
 }
