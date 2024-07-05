@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Drawing.Imaging;
 using System.IO;
+using static BIMS_dan._dan_bimsBarangayDataset;
 
 
 namespace BIMS_dan
@@ -56,9 +57,22 @@ namespace BIMS_dan
             }
         }
 
-        private void searchBarText_TextChanged(object sender, EventArgs e)
+        private async void searchBarText_TextChanged(object sender, EventArgs e)
         {
-          
+            Database db = new Database();
+            TextBox searchBarText = sender as TextBox;
+            if (searchBarText != null)
+            {
+                try
+                {
+                    DataTable searchResults = await db.SearchResidentAsync(searchBarText.Text);
+                    residentsTable.DataSource = searchResults;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error searching resident: {ex.Message}", "Search Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private async void addResidentButton_Click(object sender, EventArgs e)

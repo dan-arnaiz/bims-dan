@@ -129,6 +129,8 @@ namespace BIMS_dan
                     // Optionally, set a default image if the cell value is not an image
                     BarangayLogoPlaceholder.Image = null; // Or set to a default image
                 }
+
+
             }
 
         }
@@ -224,6 +226,56 @@ namespace BIMS_dan
             {
                 MessageBox.Show("Please select a row to delete.");
             }
+        }
+
+        private void editBarangayButton_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            // Subscribe to the CellClick event
+            this.barangaysDatatable.CellClick += new DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
+            using (Form modalForm = new Form())
+            {
+                ControllerEditBarangayModal ControllerEditBarangayModal = new ControllerEditBarangayModal();
+                modalForm.Controls.Add(ControllerEditBarangayModal);
+                ControllerEditBarangayModal.Dock = DockStyle.Fill;
+                modalForm.Name = "Edit Barangay";
+                modalForm.ShowIcon = false;
+                modalForm.ShowInTaskbar = false;
+                modalForm.Size = new Size(414, 584);
+                modalForm.MinimumSize = new Size(414, 584);
+                modalForm.MaximumSize = new Size(414, 584);
+                modalForm.StartPosition = FormStartPosition.CenterScreen;
+                modalForm.ShowDialog();
+
+                
+                };
+            }
+
+        private async void searchBarangayText_TextChanged(object sender, EventArgs e)
+        {
+            BarangayDB db = new BarangayDB();
+            TextBox searchBarangayText = sender as TextBox;
+            if (searchBarangayText != null)
+            {
+                try
+                {
+                    // Assuming SearchBarangayAsync is a method of BarangayDB and returns a DataTable
+                    DataTable searchResults = await db.SearchBarangayAsync(searchBarangayText.Text);
+                    barangaysDatatable.DataSource = searchResults;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error searching barangay: {ex.Message}", "Search Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
+
+        private void selectBarangayButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainDashboard MainDashboard = new MainDashboard();
+            MainDashboard.ShowDialog();
         }
     }
 }

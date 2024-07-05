@@ -59,8 +59,6 @@
             this.refreshBarangayTable = new System.Windows.Forms.Button();
             this.systemUserOptions = new System.Windows.Forms.Button();
             this.barangaysDatatable = new System.Windows.Forms.DataGridView();
-            this.BarangayLogoPlaceholder = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this._dan_bimsBarangayDataset = new BIMS_dan._dan_bimsBarangayDataset();
             this.barangaysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barangaysTableAdapter = new BIMS_dan._dan_bimsBarangayDatasetTableAdapters.BarangaysTableAdapter();
@@ -71,6 +69,9 @@
             this.descriptionlabeldetails = new System.Windows.Forms.Label();
             this.addressplaceholder = new System.Windows.Forms.Label();
             this.descriptionplaceholder = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.BarangayLogoPlaceholder = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.barangayIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barangayLogoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.barangayNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,12 +89,12 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysDatatable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._dan_bimsBarangayDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysBindingSource)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -240,6 +241,7 @@
             this.selectBarangayButton.TabIndex = 11;
             this.selectBarangayButton.Text = "Select Barangay";
             this.selectBarangayButton.UseVisualStyleBackColor = false;
+            this.selectBarangayButton.Click += new System.EventHandler(this.selectBarangayButton_Click);
             // 
             // editBarangayButton
             // 
@@ -253,6 +255,7 @@
             this.editBarangayButton.TabIndex = 10;
             this.editBarangayButton.Text = "Edit Barangay";
             this.editBarangayButton.UseVisualStyleBackColor = false;
+            this.editBarangayButton.Click += new System.EventHandler(this.editBarangayButton_Click);
             // 
             // deleteBarangayButton
             // 
@@ -287,7 +290,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(466, 87);
+            this.panel8.Size = new System.Drawing.Size(466, 197);
             this.panel8.TabIndex = 6;
             // 
             // panel9
@@ -298,7 +301,7 @@
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(466, 38);
+            this.panel9.Size = new System.Drawing.Size(466, 86);
             this.panel9.TabIndex = 7;
             // 
             // panel10
@@ -308,7 +311,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(466, 53);
+            this.panel10.Size = new System.Drawing.Size(466, 120);
             this.panel10.TabIndex = 6;
             // 
             // panel6
@@ -383,6 +386,7 @@
             this.searchBarangayText.Name = "searchBarangayText";
             this.searchBarangayText.Size = new System.Drawing.Size(264, 26);
             this.searchBarangayText.TabIndex = 17;
+            this.searchBarangayText.TextChanged += new System.EventHandler(this.searchBarangayText_TextChanged);
             // 
             // addBarangayButton
             // 
@@ -464,28 +468,6 @@
             this.barangaysDatatable.Size = new System.Drawing.Size(930, 606);
             this.barangaysDatatable.TabIndex = 1;
             this.barangaysDatatable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.barangaysDatatable_CellContentClick);
-            // 
-            // BarangayLogoPlaceholder
-            // 
-            this.BarangayLogoPlaceholder.InitialImage = global::BIMS_dan.Properties.Resources._21;
-            this.BarangayLogoPlaceholder.Location = new System.Drawing.Point(4, 5);
-            this.BarangayLogoPlaceholder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BarangayLogoPlaceholder.Name = "BarangayLogoPlaceholder";
-            this.BarangayLogoPlaceholder.Size = new System.Drawing.Size(148, 152);
-            this.BarangayLogoPlaceholder.TabIndex = 0;
-            this.BarangayLogoPlaceholder.TabStop = false;
-            this.BarangayLogoPlaceholder.Click += new System.EventHandler(this.BarangayLogoPlaceholder_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BIMS_dan.Properties.Resources._22;
-            this.pictureBox2.Location = new System.Drawing.Point(159, 55);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 37);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // _dan_bimsBarangayDataset
             // 
@@ -586,6 +568,38 @@
             this.descriptionplaceholder.Text = "Select a Barangay";
             this.descriptionplaceholder.Click += new System.EventHandler(this.descriptionplaceholder_Click);
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewImageColumn1.DataPropertyName = "BarangayLogo";
+            this.dataGridViewImageColumn1.HeaderText = "Barangay Logo";
+            this.dataGridViewImageColumn1.Image = global::BIMS_dan.Properties.Resources._2;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.dataGridViewImageColumn1.MinimumWidth = 100;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // BarangayLogoPlaceholder
+            // 
+            this.BarangayLogoPlaceholder.InitialImage = global::BIMS_dan.Properties.Resources._21;
+            this.BarangayLogoPlaceholder.Location = new System.Drawing.Point(4, 5);
+            this.BarangayLogoPlaceholder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BarangayLogoPlaceholder.Name = "BarangayLogoPlaceholder";
+            this.BarangayLogoPlaceholder.Size = new System.Drawing.Size(148, 152);
+            this.BarangayLogoPlaceholder.TabIndex = 0;
+            this.BarangayLogoPlaceholder.TabStop = false;
+            this.BarangayLogoPlaceholder.Click += new System.EventHandler(this.BarangayLogoPlaceholder_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BIMS_dan.Properties.Resources._22;
+            this.pictureBox2.Location = new System.Drawing.Point(159, 55);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // barangayIDDataGridViewTextBoxColumn
             // 
             this.barangayIDDataGridViewTextBoxColumn.DataPropertyName = "BarangayID";
@@ -644,7 +658,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximumSize = new System.Drawing.Size(1459, 924);
-            this.MinimumSize = new System.Drawing.Size(1459, 924);
+            this.MinimumSize = new System.Drawing.Size(1459, 858);
             this.Name = "BarangayListsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barangay Information Management System";
@@ -667,14 +681,14 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysDatatable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._dan_bimsBarangayDataset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangaysBindingSource)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BarangayLogoPlaceholder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -721,6 +735,7 @@
         private System.Windows.Forms.Label addresslabeldetails;
         private System.Windows.Forms.Label descriptionplaceholder;
         private System.Windows.Forms.Label addressplaceholder;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn barangayIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn barangayLogoDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn barangayNameDataGridViewTextBoxColumn;
